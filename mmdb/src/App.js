@@ -1,11 +1,17 @@
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
+// import components
+import Home from "./components/Home.jsx";
+import Header from "./components/Header/Header.jsx";
+
+// import Styles
 import "./App.css";
-import Home from "./components/Home.js";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Header />
         <Route exact path="/">
           <Home />
         </Route>

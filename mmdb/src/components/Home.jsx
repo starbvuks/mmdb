@@ -1,11 +1,18 @@
 import React from "react";
+import styled from "styled-components";
 
 function Home() {
   return (
-    <div>
+    <Main>
       <h1>Home</h1>
-    </div>
+    </Main>
   );
 }
 
 export default Home;
+
+const Main = styled.div`
+  margin: 5rem;
+  color: white;
+  display: flex;
+`;

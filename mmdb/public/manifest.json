@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "MMDB",
+  "name": "My Dovie DataBase",
   "icons": [
     {
       "src": "favicon.ico",
