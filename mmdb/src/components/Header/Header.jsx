@@ -1,7 +1,11 @@
+// import packages
 import React from "react";
+import {Route, Link} from "react-router-dom";
+
+// import icons
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import MovieIcon from "@material-ui/icons/Movie";
-import TvIcon from "@material-ui/icons/Tv";
+import StarIcon from "@material-ui/icons/Star";
 import AddToQueueIcon from "@material-ui/icons/AddToQueue";
 
 // import files
@@ -27,14 +31,18 @@ function Header() {
             Welcome To <HeaderTextBold>MMDb</HeaderTextBold>
           </HeaderText>
           <Divider />
+          <Link to="/login">
+            <Li>
+              <AccountBoxIcon style={{fontSize: iconSize}} />
+            </Li>
+          </Link>
+          <Link to="/movies">
+            <Li>
+              <MovieIcon style={{fontSize: iconSize}} />
+            </Li>
+          </Link>
           <Li>
-            <AccountBoxIcon style={{fontSize: iconSize}} />
-          </Li>
-          <Li>
-            <MovieIcon style={{fontSize: iconSize}} />
-          </Li>
-          <Li>
-            <TvIcon style={{fontSize: iconSize}} />
+            <StarIcon style={{fontSize: iconSize}} />
           </Li>
           <Li>
             <AddToQueueIcon style={{fontSize: iconSize}} />
