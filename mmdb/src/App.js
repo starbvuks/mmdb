@@ -11,10 +11,10 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
         <Route exact path="/">
           <Home />
         </Route>
+        <Header />
       </div>
     </Router>
   );

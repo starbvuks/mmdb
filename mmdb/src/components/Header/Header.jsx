@@ -1,37 +1,42 @@
 import React from "react";
-import MenuIcon from "@material-ui/icons/Menu";
+import AccountBoxIcon from "@material-ui/icons/AccountBox";
+import MovieIcon from "@material-ui/icons/Movie";
+import TvIcon from "@material-ui/icons/Tv";
+import AddToQueueIcon from "@material-ui/icons/AddToQueue";
 
 // import files
-import logo from "../../img/mmdb-logo.png";
 
 // import styled components
 import {
   Container,
   AppBarStyled,
   ToolbarStyled,
-  IconButtonStyled,
-  Logo,
-  Ul,
+  HeaderText,
+  HeaderTextBold,
   Li,
 } from "./HeaderStyles.js";
 
 function Header() {
+  const iconSize = 50;
   return (
     <Container>
       <AppBarStyled position="static" style={{backgroundColor: "#2e3c48"}}>
         <ToolbarStyled>
-          <Ul>
-            <Li>
-              <IconButtonStyled edge="start" color="inherit" aria-label="menu">
-                <MenuIcon />
-              </IconButtonStyled>
-            </Li>
-            <Li>
-              <Logo>
-                <img src={logo} alt="logo" width="100" />
-              </Logo>
-            </Li>
-          </Ul>
+          <HeaderText>
+            Welcome To <HeaderTextBold>MMDb</HeaderTextBold>
+          </HeaderText>
+          <Li>
+            <AccountBoxIcon style={{fontSize: iconSize}} />
+          </Li>
+          <Li>
+            <MovieIcon style={{fontSize: iconSize}} />
+          </Li>
+          <Li>
+            <TvIcon style={{fontSize: iconSize}} />
+          </Li>
+          <Li>
+            <AddToQueueIcon style={{fontSize: iconSize}} />
+          </Li>
         </ToolbarStyled>
       </AppBarStyled>
     </Container>

@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import logo from "../img/mmdb-logo.png";
 
 function Home() {
   return (
     <Main>
-      <h1>Home</h1>
+      <Logo>
+        <img src={logo} alt="logo" />
+      </Logo>
     </Main>
   );
 }
@@ -12,7 +15,16 @@ function Home() {
 export default Home;
 
 const Main = styled.div`
-  margin: 5rem;
   color: white;
   display: flex;
+  flex: 1;
+  margin-top: 20px;
+  position: absolute;
+  margin-left: 88%;
+`;
+
+export const Logo = styled.div`
+  display: flex;
+  width: 70px;
+  height: 70px;
 `;

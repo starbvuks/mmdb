@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap");
+
 :root {
   --text-yellow: #f5c53b;
   --text-grey: #919191;
@@ -6,7 +8,6 @@
 }
 
 body {
-  margin: 0;
   background-color: #1e2c42;
 }
 
