@@ -1,6 +1,6 @@
 // import packages
 import React from "react";
-import {Route, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 // import icons
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
@@ -26,10 +26,13 @@ function Header() {
   const iconSize = 50;
   return (
     <Container>
-      <AppBarStyled position="static" style={{backgroundColor: "#343c44"}}>
+      <AppBarStyled position="static" style={{backgroundColor: "#2f3b3e"}}>
         <ToolbarStyled>
           <HeaderText>
-            Welcome To <HeaderTextBold>MMDb</HeaderTextBold>
+            Welcome To{" "}
+            <Link to="/" style={{textDecoration: "none"}}>
+              <HeaderTextBold>MMDb</HeaderTextBold>
+            </Link>
           </HeaderText>
           {/* <Divider /> */}
           <Li>

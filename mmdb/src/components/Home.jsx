@@ -2,12 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import logo from "../img/mmdb-logo.png";
 
+import {Link} from "react-router-dom";
+
 function Home() {
   return (
     <Main>
-      <Logo>
-        <img src={logo} alt="logo" />
-      </Logo>
+      <Link to="/">
+        <Logo>
+          <img src={logo} alt="logo" />
+        </Logo>
+      </Link>
     </Main>
   );
 }
