@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {AppBar, Toolbar, Divider, Button} from "@material-ui/core";
+import {AppBar, Toolbar, Typography, Button} from "@material-ui/core";
 
 export const Container = styled.div`
   width: 7.5rem;
@@ -19,7 +19,7 @@ export const ToolbarStyled = styled(Toolbar)`
 export const HeaderText = styled.span`
   font-family: "Poppins";
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 `;
 
 export const HeaderTextBold = styled.span`
@@ -30,8 +30,11 @@ export const HeaderTextBold = styled.span`
   display: block;
 `;
 
-export const Dividers = styled.(Divider)`
-  width: auto;
+export const Divider = styled.hr`
+  background-color: #222d36;
+  border: 1.5px solid #222d36;
+  margin: 0;
+  width: 100%;
 `;
 
 export const Li = styled.div`
