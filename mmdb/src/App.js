@@ -9,16 +9,16 @@ import "./App.css";
 
 function App() {
   return (
-    <>
-      <Router>
+    <Router>
+      <>
         <div>
           <Header />
           <Route exact path="/">
             <Home />
           </Route>
         </div>
-      </Router>
-    </>
+      </>
+    </Router>
   );
 }
 
