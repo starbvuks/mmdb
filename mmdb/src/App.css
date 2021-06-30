@@ -10,6 +10,8 @@
 body {
   /* background-color: #1e2c42; */
   background-color: #31404a;
+  /* overflow-x: hidden; */
+  max-width: 100%;
 }
 
 body::-webkit-scrollbar {
