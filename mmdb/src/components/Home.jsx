@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "../img/mmdb-logo.png";
 
+import SearchIcon from "@material-ui/icons/Search";
+
 import {Link} from "react-router-dom";
 
 import {
@@ -8,6 +10,7 @@ import {
   Logo,
   HeaderSearchInput,
   HeaderSearch,
+  HeaderSearchInputContainer,
   Image,
 } from "./HomeStyles.js";
 
@@ -17,6 +20,9 @@ function Home() {
       <HeaderSearch>
         {/* <TextBox id="outlined-basic" variant="filled" disableUnderline="true" /> */}
         <HeaderSearchInput type="text" />
+        <HeaderSearchInputContainer>
+          <SearchIcon style={{fill: "#131921"}} />
+        </HeaderSearchInputContainer>
       </HeaderSearch>
       <Link to="/">
         <Logo>
