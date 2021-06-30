@@ -7,6 +7,7 @@ import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import MovieIcon from "@material-ui/icons/Movie";
 import StarIcon from "@material-ui/icons/Star";
 import AddToQueueIcon from "@material-ui/icons/AddToQueue";
+import Actors from "../../img/theatre.png";
 
 // import files
 
@@ -25,12 +26,12 @@ function Header() {
   const iconSize = 50;
   return (
     <Container>
-      <AppBarStyled position="static" style={{backgroundColor: "#2e3c48"}}>
+      <AppBarStyled position="static" style={{backgroundColor: "#343c44"}}>
         <ToolbarStyled>
           <HeaderText>
             Welcome To <HeaderTextBold>MMDb</HeaderTextBold>
           </HeaderText>
-          <Divider />
+          {/* <Divider /> */}
           <Link to="/login">
             <Li>
               <AccountBoxIcon style={{fontSize: iconSize}} />

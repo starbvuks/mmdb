@@ -8,7 +8,8 @@
 }
 
 body {
-  background-color: #1e2c42;
+  /* background-color: #1e2c42; */
+  background-color: #31404a;
 }
 
 body::-webkit-scrollbar {

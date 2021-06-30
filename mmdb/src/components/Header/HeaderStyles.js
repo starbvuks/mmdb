@@ -18,8 +18,9 @@ export const ToolbarStyled = styled(Toolbar)`
 
 export const HeaderText = styled.span`
   font-family: "Poppins";
-  margin-top: 25px;
-  margin-bottom: 30px;
+  background-color: #5f3850;
+  color: #fdc4b9;
+  padding: 20px 21px 30px 20px;
 `;
 
 export const HeaderTextBold = styled.span`
@@ -30,12 +31,12 @@ export const HeaderTextBold = styled.span`
   display: block;
 `;
 
-export const Divider = styled.hr`
-  background-color: #222d36;
-  border: 1.5px solid #222d36;
-  margin: 0;
-  width: 100%;
-`;
+// export const Divider = styled.hr`
+//   background-color: #a3c65c;
+//   border: 2px solid #a3c65c;
+//   margin: 0;
+//   width: 115px;
+// `;
 
 export const Li = styled.div`
   margin-top: 10px;
