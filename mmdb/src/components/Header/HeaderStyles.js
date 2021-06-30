@@ -9,11 +9,12 @@ export const Container = styled.div`
 export const AppBarStyled = styled(AppBar)`
   padding: 0;
   margin: 0;
-  height: 100vh;
 `;
 
 export const ToolbarStyled = styled(Toolbar)`
   display: flex;
+  height: 100vh;
+  background-color: #2f3b3e;
   flex-direction: column;
 `;
 

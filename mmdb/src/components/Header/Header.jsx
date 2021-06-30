@@ -26,7 +26,7 @@ function Header() {
   const iconSize = 50;
   return (
     <Container>
-      <AppBarStyled position="static" style={{backgroundColor: "#2f3b3e"}}>
+      <AppBarStyled position="static">
         <ToolbarStyled>
           <HeaderText>
             Welcome To{" "}
