@@ -26,7 +26,7 @@ function Home() {
       </HeaderSearch>
       <Link to="/">
         <Logo>
-          <Image src={logo} alt="logo" width="110" />
+          <Image src={logo} alt="logo" width="125" />
         </Logo>
       </Link>
     </Main>

@@ -4,14 +4,11 @@ import styled from "styled-components";
 export const Main = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
 `;
 
 export const HeaderSearch = styled.div`
   display: flex;
   flex-grow: 1;
-  height: 40px;
-  overflow: "hidden";
   margin: 20px 20% 0 30%;
 `;
 
@@ -25,7 +22,6 @@ export const HeaderSearchInput = styled.input`
   color: #d9e9d8;
   caret-color: #d9e9d8;
   caret-width: 2px;
-  //   border: 2px solid #d9e9d8;
   background-color: #667d7e;
 `;
 
@@ -54,7 +50,7 @@ export const HeaderSearchInputContainer = styled.button`
 
 export const Logo = styled.div`
   position: relative;
-  margin: 20px 40px 0 0;
+  margin: 20px 20px 0 0;
 `;
 
 export const Image = styled.img``;

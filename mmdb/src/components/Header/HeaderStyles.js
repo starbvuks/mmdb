@@ -4,6 +4,7 @@ import {AppBar, Toolbar, Typography, Button} from "@material-ui/core";
 export const Container = styled.div`
   width: 7.5rem;
   position: absolute;
+  height: 100vh;
 `;
 
 export const AppBarStyled = styled(AppBar)`
@@ -22,7 +23,7 @@ export const HeaderText = styled.span`
   font-family: "Poppins";
   background-color: #5f3850;
   color: #fdc4b9;
-  padding: 25px 21px 25px 20px;
+  padding: 20px 21px 25px 20px;
 `;
 
 export const HeaderTextBold = styled.span`
