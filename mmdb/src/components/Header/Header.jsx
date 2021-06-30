@@ -13,6 +13,7 @@ import {
   ToolbarStyled,
   HeaderText,
   HeaderTextBold,
+  Dividers,
   Li,
 } from "./HeaderStyles.js";
 
@@ -25,6 +26,7 @@ function Header() {
           <HeaderText>
             Welcome To <HeaderTextBold>MMDb</HeaderTextBold>
           </HeaderText>
+          <Dividers />
           <Li>
             <AccountBoxIcon style={{fontSize: iconSize}} />
           </Li>
