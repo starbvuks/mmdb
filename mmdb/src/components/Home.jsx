@@ -21,7 +21,7 @@ function Home() {
         {/* <TextBox id="outlined-basic" variant="filled" disableUnderline="true" /> */}
         <HeaderSearchInput type="text" />
         <HeaderSearchInputContainer>
-          <SearchIcon style={{fill: "#131921"}} />
+          <SearchIcon style={{fill: "#31404a"}} />
         </HeaderSearchInputContainer>
       </HeaderSearch>
       <Link to="/">

@@ -19,6 +19,12 @@ export const HeaderSearchInput = styled.input`
   flex-grow: 1;
   border-radius: 50px;
   border: none;
+  font-family: "Poppins";
+  padding-left: 20px;
+  font-size: 18pt;
+  color: #d9e9d8;
+  caret-color: #d9e9d8;
+  caret-width: 2px;
   //   border: 2px solid #d9e9d8;
   background-color: #667d7e;
 `;
