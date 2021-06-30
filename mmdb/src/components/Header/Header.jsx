@@ -7,7 +7,7 @@ import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import MovieIcon from "@material-ui/icons/Movie";
 import StarIcon from "@material-ui/icons/Star";
 import AddToQueueIcon from "@material-ui/icons/AddToQueue";
-import Actors from "../../img/theatre.png";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
 
 // import files
 
@@ -32,21 +32,30 @@ function Header() {
             Welcome To <HeaderTextBold>MMDb</HeaderTextBold>
           </HeaderText>
           {/* <Divider /> */}
-          <Link to="/login">
-            <Li>
-              <AccountBoxIcon style={{fontSize: iconSize}} />
-            </Li>
-          </Link>
-          <Link to="/movies">
-            <Li>
-              <MovieIcon style={{fontSize: iconSize}} />
-            </Li>
-          </Link>
           <Li>
-            <StarIcon style={{fontSize: iconSize}} />
+            <Link to="/login" style={{color: "inherit"}}>
+              <AccountBoxIcon style={{fontSize: iconSize}} />
+            </Link>
           </Li>
           <Li>
-            <AddToQueueIcon style={{fontSize: iconSize}} />
+            <Link to="/movies" style={{color: "inherit"}}>
+              <MovieIcon style={{fontSize: iconSize}} />
+            </Link>
+          </Li>
+          <Li>
+            <Link to="/actors" style={{color: "inherit"}}>
+              <StarIcon style={{fontSize: iconSize}} />
+            </Link>
+          </Li>
+          <Li>
+            <Link to="/watchlist" style={{color: "inherit"}}>
+              <AddToQueueIcon style={{fontSize: iconSize}} />
+            </Link>
+          </Li>
+          <Li>
+            <Link to="/reviews" style={{color: "inherit"}}>
+              <MenuBookIcon style={{fontSize: iconSize}} />
+            </Link>
           </Li>
         </ToolbarStyled>
       </AppBarStyled>

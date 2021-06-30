@@ -20,7 +20,7 @@ export const HeaderText = styled.span`
   font-family: "Poppins";
   background-color: #5f3850;
   color: #fdc4b9;
-  padding: 20px 21px 30px 20px;
+  padding: 25px 21px 25px 20px;
 `;
 
 export const HeaderTextBold = styled.span`
@@ -39,8 +39,7 @@ export const HeaderTextBold = styled.span`
 // `;
 
 export const Li = styled.div`
-  margin-top: 10px;
-  padding-top: 50px;
+  padding-top: 60px;
   color: var(--text-yellow);
   list-style: none;
 `;
