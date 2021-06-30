@@ -19,3 +19,15 @@ export const GridStyled = styled(Grid)`
 export const GridItem = styled(Grid)``;
 
 export const FooterItem = styled(Box)``;
+
+export const FooterLogo = styled(Box)`
+  display: flex;
+`;
+
+export const Img = styled.img``;
+
+export const Span = styled(Box)`
+  font-size: 20px;
+  padding: 12% 0 0 2%;
+  color: var(--text-yellow);
+`;

@@ -3,7 +3,7 @@ import {AppBar, Toolbar, Typography, Button} from "@material-ui/core";
 
 export const Container = styled.div`
   width: 7.5rem;
-  position: absolute;
+  position: fixed;
   height: 100vh;
 `;
 
