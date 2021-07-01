@@ -4,7 +4,9 @@ export const Container = styled.div``;
 
 export const LoginForm = styled.div`
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  padding: 10px;
 `;
 
 export const UsernameForm = styled.input`

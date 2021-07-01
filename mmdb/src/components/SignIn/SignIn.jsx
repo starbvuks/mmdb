@@ -13,10 +13,8 @@ function SignIn() {
     <Container>
       <LoginForm>
         <UsernameForm type="text" />
-        <PasswordForm type="text" />
-        <HeaderSearchInputContainer>
-          <SearchIcon style={{fill: "#31404a"}} />
-        </HeaderSearchInputContainer>
+        <PasswordForm type="password" />
+        <HeaderSearchInputContainer>Submit</HeaderSearchInputContainer>
       </LoginForm>
     </Container>
   );
