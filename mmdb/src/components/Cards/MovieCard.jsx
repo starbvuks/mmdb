@@ -19,7 +19,7 @@ function MainCard() {
           <Poster
             src="https://images-na.ssl-images-amazon.com/images/I/91fcWt3BHJL._SL1500_.jpg"
             alt="movie"
-            height="375"
+            height="400"
           />
         </ImageDiv>
         <BottomPortion>

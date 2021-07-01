@@ -18,7 +18,7 @@ import {
   ToolbarStyled,
   HeaderText,
   HeaderTextBold,
-  Divider,
+  ByMe,
   Li,
   Acc,
 } from "./HeaderStyles.js";
@@ -35,6 +35,7 @@ function Header() {
             <Link to="/" style={{textDecoration: "none"}}>
               <HeaderTextBold>MMDb</HeaderTextBold>
             </Link>
+            <ByMe>By sarvag kalari</ByMe>
           </HeaderText>
           {/* <Divider /> */}
           <Li>

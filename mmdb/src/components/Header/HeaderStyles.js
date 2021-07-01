@@ -23,7 +23,7 @@ export const HeaderText = styled.span`
   font-family: "Poppins";
   background-color: #3b5058;
   color: #c3d8c8;
-  padding: 20px 21px 25px 20px;
+  padding: 20px 21px 18px 20px;
 `;
 
 export const HeaderTextBold = styled.span`
@@ -32,6 +32,11 @@ export const HeaderTextBold = styled.span`
   font-weight: 800;
   color: var(--text-yellow);
   display: block;
+`;
+
+export const ByMe = styled.span`
+  font-size: 9px;
+  color: #b9d7c6;
 `;
 
 // export const Divider = styled.hr`

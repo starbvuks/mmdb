@@ -5,9 +5,8 @@ export const Container = styled.div`
   background-color: #3b5058;
   justify-content: center;
   display: flex;
-  flex-grow: 1;
   margin: 5% 5% 0 5%;
-  max-width: 254px;
+  max-width: 275px;
   height: auto;
 `;
 
