@@ -49,3 +49,10 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #f5c53b;
 }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #d9e9d8;
+  opacity: 0.5;
+  font-weight: normal;
+}

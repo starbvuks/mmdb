@@ -2,7 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+  widrh: 100%;
   margin: 30vh 0 0 0;
+`;
+
+export const Logo = styled.div`
+  position: absolute;
+  margin: 2% 0 0 85%;
 `;
 
 export const LoginForm = styled.div`
@@ -10,13 +16,22 @@ export const LoginForm = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   flex-grow: 1;
 `;
 
 export const LoginTitle = styled.span`
   font-family: "Poppins";
+  margin: 0 60vh 3vh 0;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 80px;
+  color: #d7e6d0;
+`;
+
+export const FormInputContainer = styled.div`
+  margin: 20px 80vh 0 0;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const UsernameForm = styled.input`
@@ -29,7 +44,7 @@ export const UsernameForm = styled.input`
   color: #d9e9d8;
   caret-color: #d9e9d8;
   caret-width: 2px;
-  width: 40%;
+  width: 70vh;
   background-color: #667d7e;
 `;
 
@@ -43,13 +58,9 @@ export const PasswordForm = styled.input`
   color: #d9e9d8;
   caret-color: #d9e9d8;
   caret-width: 2px;
-  width: 40%;
+  width: 70vh;
   background-color: #667d7e;
   margin: 15px 0 0 0;
-`;
-
-export const FormInputContainer = styled.div`
-  margin-right: 60vh;
 `;
 
 export const FormInputButton = styled.button`
@@ -61,10 +72,46 @@ export const FormInputButton = styled.button`
   cursor: pointer;
   display: flex;
   width: 175px;
-  margin: 15px 0 0 0;
   height: auto;
+  margin: 20px 0 0 0;
 
   :active {
     transform: scale(1.1);
   }
+`;
+
+export const BubbleBox1 = styled.div`
+  border-radius: 150px;
+  background-color: #c6d45b;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  margin: 0 65% 20% 0;
+  z-index: -1;
+`;
+
+export const BubbleBox2 = styled.div`
+  border-radius: 150px;
+  background-color: #c6d45b;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  margin: 10% 0 0 20%;
+  z-index: -1;
+`;
+
+export const OverflowDiv = styled.div`
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+`;
+
+export const BubbleBox3 = styled.div`
+  border-radius: 100%;
+  background-color: #c6d45b;
+  width: 650px;
+  height: 650px;
+  margin: 40% 0 0 3%;
+  z-index: -1;
 `;
