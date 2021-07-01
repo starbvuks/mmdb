@@ -58,10 +58,12 @@ export const Logo = styled.div`
 export const Image = styled.img``;
 
 export const HiglightedHead = styled.span`
+  display: flex;
   justify-content: center;
-  margin: 20vh 0 0 27vh;
+  margin: 25px 0 0 0; // 27vh
   font-size: 42pt;
-  color: #667d7e;
-  font-family: "Poppins";
+  color: #d8efd5;
+  letter-spacing: 1px;
+  font-family: "Quicksand";
   font-weight: 700;
 `;
