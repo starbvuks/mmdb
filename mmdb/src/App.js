@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from "./components/Home.jsx";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import SignIn from "./components/SignIn/SignIn.jsx";
 
 // import Styles
 import "./App.css";
@@ -12,11 +13,14 @@ function App() {
   return (
     <Router>
       <>
-        <Header />
         <Route exact path="/">
+          <Header />
           <Home />
+          <Footer />
         </Route>
-        <Footer />
+        <Route exact path="/login">
+          <SignIn />
+        </Route>
       </>
     </Router>
   );

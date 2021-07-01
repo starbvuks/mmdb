@@ -18,9 +18,11 @@ import {
   ToolbarStyled,
   HeaderText,
   HeaderTextBold,
-  Divider,
+  ByMe,
   Li,
+  Acc,
 } from "./HeaderStyles.js";
+import "./header.css";
 
 function Header() {
   const iconSize = 50;
@@ -33,31 +35,43 @@ function Header() {
             <Link to="/" style={{textDecoration: "none"}}>
               <HeaderTextBold>MMDb</HeaderTextBold>
             </Link>
+            <ByMe>By sarvag kalari</ByMe>
           </HeaderText>
           {/* <Divider /> */}
           <Li>
             <Link to="/login" style={{color: "inherit"}}>
-              <AccountBoxIcon style={{fontSize: iconSize}} />
+              <AccountBoxIcon
+                className="acc-icon"
+                style={{fontSize: iconSize}}
+              />
+              <span className="acc">Account</span>
             </Link>
           </Li>
           <Li>
             <Link to="/movies" style={{color: "inherit"}}>
-              <MovieIcon style={{fontSize: iconSize}} />
+              <MovieIcon className="acc-icon" style={{fontSize: iconSize}} />
+              <span className="acc">Movie List</span>
             </Link>
           </Li>
           <Li>
             <Link to="/actors" style={{color: "inherit"}}>
-              <StarIcon style={{fontSize: iconSize}} />
+              <StarIcon className="acc-icon" style={{fontSize: iconSize}} />
+              <span className="acc">Actors</span>
             </Link>
           </Li>
           <Li>
             <Link to="/watchlist" style={{color: "inherit"}}>
-              <AddToQueueIcon style={{fontSize: iconSize}} />
+              <AddToQueueIcon
+                className="acc-icon"
+                style={{fontSize: iconSize}}
+              />
+              <span className="acc">Watchlist</span>
             </Link>
           </Li>
           <Li>
             <Link to="/reviews" style={{color: "inherit"}}>
-              <MenuBookIcon style={{fontSize: iconSize}} />
+              <MenuBookIcon className="acc-icon" style={{fontSize: iconSize}} />
+              <span className="acc">Reviews</span>
             </Link>
           </Li>
         </ToolbarStyled>
