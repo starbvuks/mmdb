@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  widrh: 100%;
   margin: 30vh 0 0 0;
 `;
 
 export const Logo = styled.div`
   position: absolute;
   margin: 2% 0 0 85%;
+  z-index: 999;
 `;
 
 export const LoginForm = styled.div`
@@ -46,6 +46,7 @@ export const UsernameForm = styled.input`
   caret-width: 2px;
   width: 70vh;
   background-color: #667d7e;
+  z-index: 999;
 `;
 
 export const PasswordForm = styled.input`
@@ -61,6 +62,7 @@ export const PasswordForm = styled.input`
   width: 70vh;
   background-color: #667d7e;
   margin: 15px 0 0 0;
+  z-index: 999;
 `;
 
 export const FormInputButton = styled.button`
@@ -74,6 +76,7 @@ export const FormInputButton = styled.button`
   width: 175px;
   height: auto;
   margin: 20px 0 0 0;
+  z-index: 999;
 
   :active {
     transform: scale(1.1);

@@ -16,6 +16,7 @@ import {
   HeaderSearch,
   HeaderSearchInputContainer,
   Image,
+  HiglightedHead,
 } from "./HomeStyles.js";
 
 function Home() {
@@ -35,6 +36,7 @@ function Home() {
           </Logo>
         </Link>
       </Main>
+      <HiglightedHead></HiglightedHead>
       <CardHolder />
     </>
   );

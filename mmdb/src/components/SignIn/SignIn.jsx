@@ -35,7 +35,12 @@ function SignIn() {
           <LoginTitle>Login</LoginTitle>
           <FormInputContainer>
             <UsernameForm type="text" placeholder="Username" />
-            <PasswordForm type="password" placeholder="Password" />
+            <PasswordForm
+              type="password"
+              placeholder="Password"
+              autocorrect="off"
+              autocomplete="off"
+            />
             <FormInputButton>Submit</FormInputButton>
           </FormInputContainer>
         </LoginForm>

@@ -56,3 +56,5 @@ export const Logo = styled.div`
 `;
 
 export const Image = styled.img``;
+
+export const HiglightedHead = styled.span``;
