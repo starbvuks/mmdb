@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  justify-content: center;
   background-color: #3b5058;
   justify-content: center;
   display: flex;
-  margin: 5% 5% 0 5%;
+  margin: 3% 5% 0 5%;
   max-width: 275px;
   height: auto;
 `;
