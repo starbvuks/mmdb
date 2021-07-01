@@ -17,7 +17,7 @@ function MainCard() {
       <CardContent>
         <ImageDiv>
           <Poster
-            src="https://images-na.ssl-images-amazon.com/images/I/91fcWt3BHJL._SL1500_.jpg"
+            src="https://www.filmonpaper.com/wp-content/uploads/2011/05/TheShining_onesheet_advance_UK_SaulBass-1.jpg"
             alt="movie"
             height="400"
           />
@@ -31,7 +31,7 @@ function MainCard() {
               readOnly
             />
           </Ratings>
-          <Title>Drive</Title>
+          <Title>The Shining</Title>
         </BottomPortion>
       </CardContent>
     </Container>
