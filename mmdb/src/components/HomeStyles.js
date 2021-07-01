@@ -11,7 +11,7 @@ export const Main = styled.div`
 export const HeaderSearch = styled.div`
   display: flex;
   flex-grow: 1;
-  margin: 20px 20% 0 30%;
+  margin: 20px 35% 0 13%;
 `;
 
 export const HeaderSearchInput = styled.input`
@@ -52,18 +52,17 @@ export const HeaderSearchInputContainer = styled.button`
 
 export const Logo = styled.div`
   position: relative;
-  margin: 20px 20px 0 0;
+  margin: 25px 26vh 0 0;
 `;
 
 export const Image = styled.img``;
 
 export const HiglightedHead = styled.span`
   display: flex;
-  justify-content: center;
-  margin: 25px 0 0 0; // 27vh
-  font-size: 42pt;
-  color: #d8efd5;
-  letter-spacing: 1px;
-  font-family: "Quicksand";
-  font-weight: 700;
+  justify-content: left;
+  margin: 5px 0 0 27vh;
+  font-size: 38pt;
+  color: #d7e6d0;
+  font-family: "Poppins";
+  font-weight: 600;
 `;

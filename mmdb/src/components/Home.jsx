@@ -36,7 +36,7 @@ function Home() {
           </Logo>
         </Link>
       </Main>
-      <HiglightedHead>Popular Films</HiglightedHead>
+      <HiglightedHead>popular films:</HiglightedHead>
       <CardHolder />
     </>
   );
