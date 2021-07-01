@@ -16,11 +16,11 @@ function App() {
         <Route exact path="/">
           <Header />
           <Home />
+          <Footer />
         </Route>
         <Route exact path="/login">
           <SignIn />
         </Route>
-        <Footer />
       </>
     </Router>
   );

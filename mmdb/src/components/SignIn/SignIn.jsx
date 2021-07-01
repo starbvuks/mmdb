@@ -2,9 +2,11 @@ import React from "react";
 import {
   Container,
   LoginForm,
+  LoginTitle,
   UsernameForm,
   PasswordForm,
-  HeaderSearchInputContainer,
+  FormInputContainer,
+  FormInputButton,
 } from "./SignInStyled";
 import SearchIcon from "@material-ui/icons/Search";
 
@@ -12,9 +14,12 @@ function SignIn() {
   return (
     <Container>
       <LoginForm>
+        <LoginTitle>Login</LoginTitle>
         <UsernameForm type="text" />
         <PasswordForm type="password" />
-        <HeaderSearchInputContainer>Submit</HeaderSearchInputContainer>
+        <FormInputContainer>
+          <FormInputButton>Submit</FormInputButton>
+        </FormInputContainer>
       </LoginForm>
     </Container>
   );

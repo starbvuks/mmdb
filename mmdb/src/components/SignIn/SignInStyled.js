@@ -1,12 +1,22 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  display: flex;
+  margin: 30vh 0 0 0;
+`;
 
 export const LoginForm = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   flex-grow: 1;
-  padding: 10px;
+`;
+
+export const LoginTitle = styled.span`
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 45px;
 `;
 
 export const UsernameForm = styled.input`
@@ -19,6 +29,7 @@ export const UsernameForm = styled.input`
   color: #d9e9d8;
   caret-color: #d9e9d8;
   caret-width: 2px;
+  width: 40%;
   background-color: #667d7e;
 `;
 
@@ -32,19 +43,26 @@ export const PasswordForm = styled.input`
   color: #d9e9d8;
   caret-color: #d9e9d8;
   caret-width: 2px;
+  width: 40%;
   background-color: #667d7e;
+  margin: 15px 0 0 0;
 `;
 
-export const HeaderSearchInputContainer = styled.button`
+export const FormInputContainer = styled.div`
+  margin-right: 60vh;
+`;
+
+export const FormInputButton = styled.button`
   background-color: #d7e6d0;
+  font-family: "Poppins";
+  font-size: 18px;
+  border-radius: 25px;
   justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  margin: 0 0 0 10px;
   cursor: pointer;
   display: flex;
-  height: 40px;
-  width: 40px;
+  width: 175px;
+  margin: 15px 0 0 0;
+  height: auto;
 
   :active {
     transform: scale(1.1);
