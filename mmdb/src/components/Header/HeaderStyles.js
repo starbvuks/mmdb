@@ -21,8 +21,8 @@ export const ToolbarStyled = styled(Toolbar)`
 
 export const HeaderText = styled.span`
   font-family: "Poppins";
-  background-color: #5f3850;
-  color: #fdc4b9;
+  background-color: #3b5058;
+  color: #c3d8c8;
   padding: 20px 21px 25px 20px;
 `;
 

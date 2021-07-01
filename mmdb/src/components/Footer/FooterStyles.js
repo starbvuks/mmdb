@@ -3,7 +3,7 @@ import {Container, Grid, Box} from "@material-ui/core";
 
 export const BoxStyled = styled(Box)`
   color: white;
-  margin-top: 100vh;
+  margin-top: 75vh;
   font-family: "Poppins";
   font-weight: 500;
 `;

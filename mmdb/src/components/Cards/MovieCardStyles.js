@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   justify-content: center;
-  background-color: #2f3b3e;
+  background-color: #3b5058;
   justify-content: center;
   display: flex;
   flex-grow: 1;
   margin: 5% 5% 0 5%;
-  max-width: 255px;
+  max-width: 254px;
   height: auto;
 `;
 
@@ -18,13 +18,15 @@ export const ImageDiv = styled.div``;
 export const Poster = styled.img``;
 
 export const BottomPortion = styled.div`
-  margin-left: 15px;
-  padding-bottom: 10px;
+  margin: 10px 0 10px 15px;
 `;
 
 export const Title = styled.span`
-  color: white;
-  font-family: "Poppins";
+  color: #c3d8c8;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 24px;
 `;
 
 export const Ratings = styled.div``;

@@ -17,7 +17,7 @@ function MainCard() {
       <CardContent>
         <ImageDiv>
           <Poster
-            src="https://m.media-amazon.com/images/M/MV5BMmE1ODVhMGYtODYyYS00Mjc4LWIzN2EtYWZkZDg1MTUyNDkxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+            src="https://images-na.ssl-images-amazon.com/images/I/91fcWt3BHJL._SL1500_.jpg"
             alt="movie"
             height="375"
           />
@@ -31,7 +31,7 @@ function MainCard() {
               readOnly
             />
           </Ratings>
-          <Title>Movie</Title>
+          <Title>Drive</Title>
         </BottomPortion>
       </CardContent>
     </Container>
