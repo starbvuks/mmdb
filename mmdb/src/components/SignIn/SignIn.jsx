@@ -1,8 +1,9 @@
 import React from "react";
 import {
   Container,
-  HeaderSearch,
-  HeaderSearchInput,
+  LoginForm,
+  UsernameForm,
+  PasswordForm,
   HeaderSearchInputContainer,
 } from "./SignInStyled";
 import SearchIcon from "@material-ui/icons/Search";
@@ -10,13 +11,13 @@ import SearchIcon from "@material-ui/icons/Search";
 function SignIn() {
   return (
     <Container>
-      <HeaderSearch>
-        <HeaderSearchInput type="text" />
-        <HeaderSearchInput type="text" />
+      <LoginForm>
+        <UsernameForm type="text" />
+        <PasswordForm type="text" />
         <HeaderSearchInputContainer>
           <SearchIcon style={{fill: "#31404a"}} />
         </HeaderSearchInputContainer>
-      </HeaderSearch>
+      </LoginForm>
     </Container>
   );
 }

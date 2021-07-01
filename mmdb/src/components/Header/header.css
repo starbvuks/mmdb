@@ -1,14 +1,16 @@
 .acc {
-  visibility: hidden;
   width: 90px;
   font-family: "Poppins";
   background-color: var(--text-yellow);
-  color: #3b5058;
-  text-align: center;
+  position: absolute;
+  transition: 0.3s all;
   border-radius: 25px;
+  text-align: center;
+  color: #3b5058;
   margin: 7% 0 0 7%;
   padding: 5px 0;
-  position: absolute;
+  display: inline;
+  opacity: 0;
   z-index: 1;
 }
 
@@ -18,5 +20,7 @@
 }
 
 .acc-icon:hover + .acc {
-  visibility: visible;
+  outline: none;
+  text-decoration: none;
+  opacity: 1;
 }

@@ -2,12 +2,25 @@ import styled from "styled-components";
 
 export const Container = styled.div``;
 
-export const HeaderSearch = styled.div`
+export const LoginForm = styled.div`
   display: flex;
   flex-grow: 1;
 `;
 
-export const HeaderSearchInput = styled.input`
+export const UsernameForm = styled.input`
+  flex-grow: 1;
+  border-radius: 50px;
+  border: none;
+  font-family: "Poppins";
+  padding-left: 20px;
+  font-size: 18pt;
+  color: #d9e9d8;
+  caret-color: #d9e9d8;
+  caret-width: 2px;
+  background-color: #667d7e;
+`;
+
+export const PasswordForm = styled.input`
   flex-grow: 1;
   border-radius: 50px;
   border: none;
