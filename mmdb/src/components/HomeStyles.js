@@ -24,6 +24,7 @@ export const HeaderSearchInput = styled.input`
   color: #d9e9d8;
   caret-color: #d9e9d8;
   caret-width: 2px;
+  height: 50px;
   background-color: #667d7e;
 `;
 
@@ -35,8 +36,8 @@ export const HeaderSearchInputContainer = styled.button`
   margin: 0 0 0 10px;
   cursor: pointer;
   display: flex;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
 
   :active {
     transform: scale(1.1);

@@ -25,14 +25,14 @@ function Home() {
       <Main>
         <HeaderSearch>
           {/* <TextBox id="outlined-basic" variant="filled" disableUnderline="true" /> */}
-          <HeaderSearchInput type="text" />
+          <HeaderSearchInput type="text" placeholder="Search" />
           <HeaderSearchInputContainer>
             <SearchIcon style={{fill: "#31404a"}} />
           </HeaderSearchInputContainer>
         </HeaderSearch>
         <Link to="/">
           <Logo>
-            <Image src={logo} alt="logo" width="125" />
+            <Image src={logo} alt="logo" width="150" />
           </Logo>
         </Link>
       </Main>

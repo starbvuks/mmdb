@@ -73,7 +73,7 @@ export const FormInputButton = styled.button`
   justify-content: center;
   cursor: pointer;
   display: flex;
-  width: 175px;
+  width: 100px;
   height: auto;
   margin: 20px 0 0 0;
   z-index: 999;
