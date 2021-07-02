@@ -11,7 +11,7 @@ import {
 
 import {Rating} from "@material-ui/lab";
 
-function MainCard({poster_path, title, vote_average}) {
+function MainCard(poster_path, title, vote_average) {
   return (
     <Container>
       <CardContent>
@@ -27,7 +27,7 @@ function MainCard({poster_path, title, vote_average}) {
               readOnly
             />
           </Ratings>
-          <Title>{title}</Title>
+          <Title>The Shining</Title>
         </BottomPortion>
       </CardContent>
     </Container>

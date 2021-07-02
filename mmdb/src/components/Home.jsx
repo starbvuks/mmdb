@@ -1,14 +1,3 @@
-// import packages
-import React from "react";
-import logo from "../img/mmdb-logo.png";
-import {Link} from "react-router-dom";
-
-// import icons
-import SearchIcon from "@material-ui/icons/Search";
-
-// import files
-import CardHolder from "./Cards/CardHolder";
-
 import {
   Main,
   Logo,
@@ -18,6 +7,17 @@ import {
   Image,
   HiglightedHead,
 } from "./HomeStyles.js";
+// import packages
+import React, {useEffect, useState} from "react";
+import logo from "../img/mmdb-logo.png";
+import {Link} from "react-router-dom";
+
+// import icons
+import SearchIcon from "@material-ui/icons/Search";
+
+// import files
+import CardHolder from "./Cards/CardHolder";
+import MovieCard from "./Cards/MovieCard.jsx";
 
 function Home() {
   return (

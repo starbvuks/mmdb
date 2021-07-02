@@ -18,15 +18,17 @@ function CardHolder() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        setMovies(data);
+        setMovies(data.results);
       });
   }, []);
 
   return (
-    <Container>
-      {movies.length > 0 &&
-        movies.map((movie) => <MovieCard key={movie.id} data={movie} />)}
-    </Container>
+    <>
+      <Container>
+        {movies.length > 0 &&
+          movies.map((movie) => <MovieCard key={movie.id} {...movie} />)}
+      </Container>
+    </>
   );
 }
 
@@ -36,4 +38,5 @@ const Container = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   display: flex;
+  z-index: 1000;
 `;
