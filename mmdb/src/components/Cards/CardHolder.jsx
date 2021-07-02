@@ -6,7 +6,7 @@ import styled from "styled-components";
 // import api related
 
 const FEATURED_API =
-  "https://api.themoviedb.org/3/movie/top_rated?api_key=5e86a10fe6baf06ca1a742fa8c4fdc2d&language=en-US";
+  "https://api.themoviedb.org/3/movie/top_rated?api_key=5e86a10fe6baf06ca1a742fa8c4fdc2d&page=1&language=en-US";
 const SEARCH_API =
   "https://api.themoviedb.org/3/search/movie?api_key=5e86a10fe6baf06ca1a742fa8c4fdc2d&language=en-US&query=";
 
@@ -14,18 +14,18 @@ function CardHolder() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    async function fetchData() {
-      const moviesRes = await fetch(FEATURED_API);
-      const moviesR = await moviesRes.json();
-      setMovies(moviesR);
-    }
+    fetch(FEATURED_API)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setMovies(data);
+      });
   }, []);
 
   return (
     <Container>
-      {movies.map((movie) => (
-        <MovieCard />
-      ))}
+      {movies.length > 0 &&
+        movies.map((movie) => <MovieCard key={movie.id} data={movie} />)}
     </Container>
   );
 }

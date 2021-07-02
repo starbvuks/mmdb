@@ -11,16 +11,12 @@ import {
 
 import {Rating} from "@material-ui/lab";
 
-function MainCard() {
+function MainCard({poster_path, title, vote_average}) {
   return (
     <Container>
       <CardContent>
         <ImageDiv>
-          <Poster
-            src="https://www.filmonpaper.com/wp-content/uploads/2011/05/TheShining_onesheet_advance_UK_SaulBass-1.jpg"
-            alt="movie"
-            height="400"
-          />
+          <Poster src={poster_path} alt="movie" height="400" />
         </ImageDiv>
         <BottomPortion>
           <Ratings>
@@ -31,7 +27,7 @@ function MainCard() {
               readOnly
             />
           </Ratings>
-          <Title>The Shining</Title>
+          <Title>{title}</Title>
         </BottomPortion>
       </CardContent>
     </Container>
