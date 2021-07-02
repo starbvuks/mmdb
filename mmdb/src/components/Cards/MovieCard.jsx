@@ -11,14 +11,14 @@ import {
 
 import {Rating} from "@material-ui/lab";
 
-const IMAGE_API = "https://www.themoviedb.org/t/p/original/";
+const IMAGE_API = "https://www.themoviedb.org/t/p/w300/";
 
 function MainCard({title, poster_path}) {
   return (
     <Container>
       <CardContent>
         <ImageDiv>
-          <Poster src={IMAGE_API + poster_path} alt="movie" height="400" />
+          <Poster src={IMAGE_API + poster_path} alt="movie" />
         </ImageDiv>
         <BottomPortion>
           <Ratings>

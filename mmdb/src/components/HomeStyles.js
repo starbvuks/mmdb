@@ -53,7 +53,7 @@ export const HeaderSearchInputContainer = styled.button`
 
 export const Logo = styled.div`
   position: relative;
-  margin: 25px 26vh 0 0;
+  margin: 25px 16vh 0 0;
 `;
 
 export const Image = styled.img``;
