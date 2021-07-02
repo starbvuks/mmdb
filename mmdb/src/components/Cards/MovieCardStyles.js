@@ -30,9 +30,12 @@ export const Title = styled.span`
 export const Ratings = styled.div``;
 
 export const Rating = styled.span`
-  color: #c3d8c8;
+  color: #2f3b3e;
   font-family: "Montserrat";
+  background-color: #c3d8c8;
   letter-spacing: 1px;
   font-weight: 700;
   font-size: 24px;
+  padding: 5px;
+  border-radius: 10px;
 `;
