@@ -28,3 +28,11 @@ export const Title = styled.span`
 `;
 
 export const Ratings = styled.div``;
+
+export const Rating = styled.span`
+  color: #c3d8c8;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 24px;
+`;

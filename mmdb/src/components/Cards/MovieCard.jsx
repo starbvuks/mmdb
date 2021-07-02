@@ -6,14 +6,15 @@ import {
   Poster,
   Title,
   Ratings,
+  Rating,
   BottomPortion,
 } from "./MovieCardStyles";
 
-import {Rating} from "@material-ui/lab";
+// import {Rating} from "@material-ui/lab";
 
 const IMAGE_API = "https://www.themoviedb.org/t/p/w300/";
 
-function MainCard({title, poster_path}) {
+function MainCard({title, poster_path, vote_average}) {
   return (
     <Container>
       <CardContent>
@@ -21,15 +22,10 @@ function MainCard({title, poster_path}) {
           <Poster src={IMAGE_API + poster_path} alt="movie" />
         </ImageDiv>
         <BottomPortion>
-          <Ratings>
-            <Rating
-              name="half-rating-read"
-              defaultValue={4.5}
-              precision={0.5}
-              readOnly
-            />
-          </Ratings>
           <Title>{title}</Title>
+          <Ratings>
+            <Rating name="half-rating-read">{vote_average}</Rating>
+          </Ratings>
         </BottomPortion>
       </CardContent>
     </Container>
