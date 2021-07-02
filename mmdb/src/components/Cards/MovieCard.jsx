@@ -11,12 +11,14 @@ import {
 
 import {Rating} from "@material-ui/lab";
 
-function MainCard(poster_path, title, vote_average) {
+const IMAGE_API = "https://www.themoviedb.org/t/p/original/";
+
+function MainCard({title, poster_path}) {
   return (
     <Container>
       <CardContent>
         <ImageDiv>
-          <Poster src={poster_path} alt="movie" height="400" />
+          <Poster src={IMAGE_API + poster_path} alt="movie" height="400" />
         </ImageDiv>
         <BottomPortion>
           <Ratings>
@@ -27,7 +29,7 @@ function MainCard(poster_path, title, vote_average) {
               readOnly
             />
           </Ratings>
-          <Title>The Shining</Title>
+          <Title>{title}</Title>
         </BottomPortion>
       </CardContent>
     </Container>
