@@ -1,8 +1,6 @@
 import styled from "styled-components";
 // import {TextField} from "@material-ui/core";
 
-import logo from "../../img/mmdb-logo.png";
-
 export const Main = styled.div`
   display: flex;
   align-items: center;
