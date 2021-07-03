@@ -17,6 +17,10 @@ export const ToolbarStyled = styled(Toolbar)`
   height: 100vh;
   background-color: #2f3b3e;
   flex-direction: column;
+
+  @media (max-height: 618px) {
+    height: 100vh;
+  }
 `;
 
 export const HeaderText = styled.span`
@@ -54,4 +58,8 @@ export const Li = styled.div`
   padding-top: 60px;
   color: var(--text-yellow);
   list-style: none;
+
+  @media (max-height: 686px) {
+    padding-top: 40%;
+  }
 `;
