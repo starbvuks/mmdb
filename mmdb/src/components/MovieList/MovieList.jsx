@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from "react";
-import {Container, HeadSection, Main, Header} from "./MovieListStyles";
+import {Container, HeadSection, Logo, Main, Header} from "./MovieListStyles";
+import {Link} from "react-router-dom";
 
 import MovieListItems from "./MovieListItems.jsx";
+import logo from "../../img/mmdb-logo.png";
 
 const api_key = process.env.REACT_APP_API_KEY;
 const LATEST_API = `
@@ -22,6 +24,11 @@ function MovieList() {
     <Container>
       <HeadSection>
         <Header>newest releases</Header>
+        <Link to="/">
+          <Logo>
+            <img src={logo} alt="logo" width="150" />
+          </Logo>
+        </Link>
       </HeadSection>
       <Main>
         {movies.length > 0 &&
