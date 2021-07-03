@@ -6,7 +6,7 @@ export const HeadSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px 13vh 0 30vh;
+  margin: 30px 13vh 0 15%;
 `;
 
 export const Logo = styled.div``;
