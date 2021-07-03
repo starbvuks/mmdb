@@ -8,7 +8,7 @@ function ActorContent({name, profile_path}) {
     <Container>
       <Content>
         <Poster>
-          <img src={IMAGE_API + profile_path} alt="movie" />
+          <Image src={IMAGE_API + profile_path} alt="movie" />
         </Poster>
         <Title>{name}</Title>
       </Content>

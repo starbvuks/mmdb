@@ -33,8 +33,10 @@ function ActorPage() {
           </Logo>
         </Link>
       </HeadSection>
-      {actors.length > 0 &&
-        actors.map((actor) => <ActorContent key={actor.id} {...actor} />)}
+      <Main>
+        {actors.length > 0 &&
+          actors.map((actor) => <ActorContent key={actor.id} {...actor} />)}
+      </Main>
     </Container>
   );
 }

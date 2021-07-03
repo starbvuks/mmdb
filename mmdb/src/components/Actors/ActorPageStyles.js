@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div``;
-export const Main = styled.div``;
 
 export const HeadSection = styled.div`
   display: flex;
@@ -19,11 +18,10 @@ export const Header = styled.span`
   font-family: "Poppins";
   font-weight: 600;
 `;
-
-// export const Main = styled.div`
-//   justify-content: center;
-//   flex-wrap: wrap;
-//   margin-left: 75px;
-//   display: flex;
-//   z-index: 1000;
-// `;
+export const Main = styled.div`
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 75px;
+  display: flex;
+  z-index: 1000;
+`;
