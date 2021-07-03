@@ -40,7 +40,6 @@ export const Rating = styled.span`
   color: #2f3b3e;
   font-family: "Montserrat";
   background-color: #c3d8c8;
-
   letter-spacing: 1px;
   font-weight: 700;
   font-size: 18px;

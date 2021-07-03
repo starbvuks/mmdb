@@ -7,7 +7,7 @@ import logo from "../../img/mmdb-logo.png";
 
 const api_key = process.env.REACT_APP_API_KEY;
 const LATEST_API = `
-https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}&language=en-US&page=1`;
+https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}&language=en-US&page=2`;
 
 function MovieList() {
   const [movies, setMovies] = useState([]);
@@ -18,7 +18,8 @@ function MovieList() {
       .then((data) => {
         console.log(data);
         setMovies(data.results);
-      });
+      })
+      .catch((err) => console.log(err));
   }, []);
   return (
     <Container>

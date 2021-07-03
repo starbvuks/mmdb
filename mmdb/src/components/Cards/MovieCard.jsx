@@ -10,8 +10,6 @@ import {
   BottomPortion,
 } from "./MovieCardStyles";
 
-// import {Rating} from "@material-ui/lab";
-
 const IMAGE_API = "https://www.themoviedb.org/t/p/w300/";
 
 function MainCard({title, poster_path, vote_average}) {

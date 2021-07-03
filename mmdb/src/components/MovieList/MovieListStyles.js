@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  margin-left: 75px;
-`;
+export const Container = styled.div``;
 
 export const HeadSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px 16vh 0 17vh;
+  margin: 30px 13vh 0 30vh;
 `;
 
 export const Logo = styled.div``;
@@ -21,4 +19,10 @@ export const Header = styled.span`
   font-weight: 600;
 `;
 
-export const Main = styled.div``;
+export const Main = styled.div`
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 75px;
+  display: flex;
+  z-index: 1000;
+`;

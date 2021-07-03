@@ -18,7 +18,8 @@ function CardHolder() {
       .then((res) => res.json())
       .then((data) => {
         setMovies(data.results);
-      });
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   return (
