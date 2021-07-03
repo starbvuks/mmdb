@@ -9,6 +9,14 @@ const FEATURED_API = `https://api.themoviedb.org/3/movie/popular?api_key=${api_k
 function MovieList() {
   const [movies, setMovies] = useState([]);
 
+  useEffect(() => {
+    fetch(FEATURED_API)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setMovies(data.results);
+      });
+  }, []);
   return (
     <Container>
       <HeadSection>
