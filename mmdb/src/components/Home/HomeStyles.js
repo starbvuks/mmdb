@@ -11,7 +11,7 @@ export const HeaderFlex = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  margin: 25px 8% 0 13%;
+  margin: 25px 9% 0 15%;
 `;
 
 export const HeaderSearch = styled.div`
@@ -28,7 +28,7 @@ export const HeaderSearchInput = styled.input`
   color: #d9e9d8;
   caret-color: #d9e9d8;
   caret-width: 2px;
-  width: 75%;
+  width: 55vh;
   height: 50px;
   background-color: #667d7e;
 `;
@@ -65,7 +65,7 @@ export const Image = styled.img`
 export const HiglightedHead = styled.span`
   display: flex;
   justify-content: left;
-  margin: 5px 0 0 13%;
+  margin: 5px 0 0 15%;
   font-size: 38pt;
   color: #d7e6d0;
   font-family: "Poppins";
