@@ -34,12 +34,18 @@ function SignIn() {
           </OverflowDiv>
           <LoginTitle>Login</LoginTitle>
           <FormInputContainer>
-            <UsernameForm type="text" placeholder="Username" required />
+            <UsernameForm
+              type="text"
+              placeholder="Username"
+              spellCheck="false"
+              required
+            />
             <PasswordForm
               type="password"
               placeholder="Password"
               autocorrect="off"
               autocomplete="off"
+              spellCheck="false"
               required
             />
             <FormInputButton>Submit</FormInputButton>

@@ -23,6 +23,7 @@ export const HeaderSearchInput = styled.input`
   border-radius: 50px;
   border: none;
   font-family: "Poppins";
+  font-weight: 600;
   padding-left: 20px;
   font-size: 18pt;
   color: #d9e9d8;

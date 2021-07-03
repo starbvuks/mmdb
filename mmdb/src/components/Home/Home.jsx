@@ -25,9 +25,12 @@ function Home() {
     <>
       <Main>
         <HeaderFlex>
-          <HeaderSearch>
-            {/* <TextBox id="outlined-basic" variant="filled" disableUnderline="true" /> */}
-            <HeaderSearchInput type="text" placeholder="Search" />
+          <HeaderSearch placeholder="Search">
+            <HeaderSearchInput
+              spellCheck="false"
+              type="text"
+              placeholder="Search"
+            />
             <HeaderSearchInputContainer>
               <SearchIcon style={{fill: "#31404a"}} />
             </HeaderSearchInputContainer>

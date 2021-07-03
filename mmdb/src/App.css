@@ -56,6 +56,10 @@ body::-webkit-scrollbar-thumb {
   font-weight: normal;
 }
 
+::spelling-error {
+  text-decoration: none;
+}
+
 img {
   user-select: none;
   -moz-user-select: none;
