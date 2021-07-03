@@ -37,7 +37,7 @@ export default CardHolder;
 const Container = styled.div`
   justify-content: center;
   flex-wrap: wrap;
-  margin-left: 75px;
+  margin-left: 5%;
   display: flex;
   z-index: 1000;
 `;

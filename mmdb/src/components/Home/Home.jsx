@@ -1,6 +1,7 @@
 import {
   Main,
   Logo,
+  HeaderFlex,
   HeaderSearchInput,
   HeaderSearch,
   HeaderSearchInputContainer,
@@ -23,18 +24,20 @@ function Home() {
   return (
     <>
       <Main>
-        <HeaderSearch>
-          {/* <TextBox id="outlined-basic" variant="filled" disableUnderline="true" /> */}
-          <HeaderSearchInput type="text" placeholder="Search" />
-          <HeaderSearchInputContainer>
-            <SearchIcon style={{fill: "#31404a"}} />
-          </HeaderSearchInputContainer>
-        </HeaderSearch>
-        <Link to="/">
-          <Logo>
-            <Image src={logo} alt="logo" width="150" />
-          </Logo>
-        </Link>
+        <HeaderFlex>
+          <HeaderSearch>
+            {/* <TextBox id="outlined-basic" variant="filled" disableUnderline="true" /> */}
+            <HeaderSearchInput type="text" placeholder="Search" />
+            <HeaderSearchInputContainer>
+              <SearchIcon style={{fill: "#31404a"}} />
+            </HeaderSearchInputContainer>
+          </HeaderSearch>
+          <Link to="/">
+            <Logo>
+              <Image src={logo} alt="logo" width="150" />
+            </Logo>
+          </Link>
+        </HeaderFlex>
       </Main>
       <HiglightedHead>featured films:</HiglightedHead>
       <CardHolder />
