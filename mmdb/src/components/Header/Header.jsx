@@ -35,7 +35,7 @@ function Header() {
             <Link to="/" style={{textDecoration: "none"}}>
               <HeaderTextBold>MMDb</HeaderTextBold>
             </Link>
-            <ByMe>By sarvag kalari</ByMe>
+            <ByMe href="https://github.com/starbvuks">By sarvag kalari</ByMe>
           </HeaderText>
           {/* <Divider /> */}
           <Li>
