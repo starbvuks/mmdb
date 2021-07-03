@@ -16,12 +16,8 @@ function ActorContent({name, profile_path}) {
   return (
     <Container>
       <Content>
-        <Poster>
-          <Image
-            className="img-wrap"
-            src={IMAGE_API + profile_path}
-            alt="movie"
-          />
+        <Poster className="img-wrap">
+          <Image src={IMAGE_API + profile_path} alt="movie" />
           <OnHover className="img-desc">
             <Name>{name}</Name>
           </OnHover>

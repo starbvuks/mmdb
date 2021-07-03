@@ -5,13 +5,16 @@
   left: 0;
   right: 0;
   height: 100%;
+  display: flex;
   background-color: var(--text-yellow);
   text-align: center;
   justify-content: center;
-  transform: transformY(100%);
-  transform: transform 0.3s ease-in-out;
+  opacity: 0;
+  transition: 0.5s;
+  transform: transformX(0%);
 }
 
-.img-wrap:hover .img__desc {
-  transform: translateY(0%);
+.img-wrap:hover .img-desc {
+  transform: scale(1);
+  opacity: 1;
 }
