@@ -1,6 +1,7 @@
 .acc {
   width: 90px;
   font-family: "Poppins";
+  font-weight: 600;
   background-color: var(--text-yellow);
   position: absolute;
   transition: 0.3s all;

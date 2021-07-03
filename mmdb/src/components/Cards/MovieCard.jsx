@@ -6,32 +6,24 @@ import {
   Poster,
   Title,
   Ratings,
+  Rating,
   BottomPortion,
 } from "./MovieCardStyles";
 
-import {Rating} from "@material-ui/lab";
+const IMAGE_API = "https://www.themoviedb.org/t/p/w300/";
 
-function MainCard() {
+function MainCard({title, poster_path, vote_average}) {
   return (
     <Container>
       <CardContent>
         <ImageDiv>
-          <Poster
-            src="https://www.filmonpaper.com/wp-content/uploads/2011/05/TheShining_onesheet_advance_UK_SaulBass-1.jpg"
-            alt="movie"
-            height="400"
-          />
+          <Poster src={IMAGE_API + poster_path} alt="movie" />
         </ImageDiv>
         <BottomPortion>
+          <Title>{title}</Title>
           <Ratings>
-            <Rating
-              name="half-rating-read"
-              defaultValue={4.5}
-              precision={0.5}
-              readOnly
-            />
+            <Rating name="half-rating-read">{vote_average}</Rating>
           </Ratings>
-          <Title>The Shining</Title>
         </BottomPortion>
       </CardContent>
     </Container>

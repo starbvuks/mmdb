@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {AppBar, Toolbar, Typography, Button} from "@material-ui/core";
+import {AppBar, Toolbar} from "@material-ui/core";
 
 export const Container = styled.div`
   width: 7.5rem;
@@ -34,9 +34,13 @@ export const HeaderTextBold = styled.span`
   display: block;
 `;
 
-export const ByMe = styled.span`
+export const ByMe = styled.a`
   font-size: 9px;
   color: #b9d7c6;
+
+  :link {
+    text-decoration: none;
+  }
 `;
 
 // export const Divider = styled.hr`

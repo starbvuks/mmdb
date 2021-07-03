@@ -1,8 +1,6 @@
 import styled from "styled-components";
 // import {TextField} from "@material-ui/core";
 
-import logo from "../img/mmdb-logo.png";
-
 export const Main = styled.div`
   display: flex;
   align-items: center;
@@ -53,7 +51,7 @@ export const HeaderSearchInputContainer = styled.button`
 
 export const Logo = styled.div`
   position: relative;
-  margin: 25px 26vh 0 0;
+  margin: 30px 16vh 0 0;
 `;
 
 export const Image = styled.img``;
