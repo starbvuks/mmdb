@@ -2,8 +2,9 @@ import React from "react";
 
 import {Container, Main} from "./MovieListStyles";
 
-const API_KEY = "5e86a10fe6baf06ca1a742fa8c4fdc2d";
-const FEATURED_API = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&page=1&language=en-US`;
+const api_key = process.env.REACT_APP_API_KEY;
+
+const FEATURED_API = `https://api.themoviedb.org/3/movie/popular?api_key=${api_key}&page=1&language=en-US`;
 
 function MovieList() {
   return (

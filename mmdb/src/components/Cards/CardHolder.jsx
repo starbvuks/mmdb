@@ -5,10 +5,10 @@ import styled from "styled-components";
 
 // import api related
 
-const FEATURED_API =
-  "https://api.themoviedb.org/3/movie/popular?api_key=5e86a10fe6baf06ca1a742fa8c4fdc2d&page=1&language=en-US";
-const SEARCH_API =
-  "https://api.themoviedb.org/3/search/movie?api_key=5e86a10fe6baf06ca1a742fa8c4fdc2d&language=en-US&query=";
+const api_key = process.env.REACT_APP_API_KEY;
+
+const FEATURED_API = `https://api.themoviedb.org/3/movie/popular?api_key=${api_key}&page=1&language=en-US`;
+const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&page=1&language=en-US`;
 
 function CardHolder() {
   const [movies, setMovies] = useState([]);
