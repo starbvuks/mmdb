@@ -4,6 +4,7 @@ import {
   Container,
   Main,
   Poster,
+  Image,
   Title,
   ReleaseDate,
   Rating,
@@ -24,7 +25,7 @@ function MovieListItems({
     <Container>
       <Main>
         <Poster>
-          <img src={IMAGE_API + poster_path} alt="movie" />
+          <Image src={IMAGE_API + poster_path} alt="movie" />
         </Poster>
         <Details>
           {/* <Title>{title}</Title>
