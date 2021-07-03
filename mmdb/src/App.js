@@ -6,6 +6,7 @@ import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import SignIn from "./components/SignIn/SignIn.jsx";
 import MovieList from "./components/MovieList/MovieList.jsx";
+import ActorList from "./components/Actors/ActorPage.jsx";
 
 // import Styles
 import "./App.css";
@@ -25,6 +26,11 @@ function App() {
         <Route exact path="/movies">
           <Header />
           <MovieList />
+          <Footer />
+        </Route>
+        <Route exact path="/actors">
+          <Header />
+          <ActorList />
           <Footer />
         </Route>
       </>
