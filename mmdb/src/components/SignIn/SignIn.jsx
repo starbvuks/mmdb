@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {useRef, useState, useEffect} from "react";
 import {
   Container,
   LoginForm,
@@ -54,7 +54,8 @@ function SignIn() {
             <BubbleBox3 />
           </OverflowDiv>
           <LoginTitle>Sign Up</LoginTitle>
-          {console.log(currentUser)}
+          {/* <LoginTitle>Welcome, {currentUser && currentUser.email} !</LoginTitle> */}
+
           <FormInputContainer onSubmit={handleSubmit}>
             <UsernameForm
               type="email"

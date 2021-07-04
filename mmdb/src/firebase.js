@@ -1,15 +1,30 @@
 import firebase from "firebase/app";
 import "firebase/auth";
+// import app from "firebase/app";
 
-const app = firebase.initializeApp({
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
+const firebaseConfig = firebase.initializeApp({
+  apiKey: "AIzaSyBEsyCbw-PzsDRd4vrIaYNRewv3Li4bIDw",
+  authDomain: "mmdb-auth.firebaseapp.com",
+  projectId: "mmdb-auth",
+  storageBucket: "mmdb-auth.appspot.com",
+  messagingSenderId: "832474621606",
+  appId: "1:832474621606:web:8bbb636211c7f7be913667",
+  measurementId: "G-6PEDD4K62S",
 });
 
-export const auth = app.auth();
-export default app;
+// if (!firebase.apps.length) {
+//   firebase.initializeApp({});
+// } else {
+//   firebase.app();
+// }
+
+// class Firebase {
+//   constructor() {
+//     app.initializeApp(config);
+
+//     this.auth = app.auth();
+//   }
+// }
+
+export const auth = firebaseConfig.auth();
+export default firebaseConfig;
