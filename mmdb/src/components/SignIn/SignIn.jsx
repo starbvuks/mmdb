@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useRef, useState} from "react";
 import {
   Container,
   LoginForm,
@@ -15,11 +15,30 @@ import {
 } from "./SignInStyled";
 import {Link} from "react-router-dom";
 
+import {useAuth} from "../contexts/AuthContext";
+
 import logo from "../../img/mmdb-logo.png";
 
 function SignIn() {
   const emailRef = useRef();
   const passwordRef = useRef();
+  const {signup, currentUser} = useAuth();
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    try {
+      setError("");
+      setLoading(true);
+      await signup(emailRef.current.value, passwordRef.current.value);
+    } catch {
+      setError("Failed to create an account");
+    }
+    setLoading(false);
+  }
+
   return (
     <>
       <Link to="/">
@@ -35,7 +54,8 @@ function SignIn() {
             <BubbleBox3 />
           </OverflowDiv>
           <LoginTitle>Sign Up</LoginTitle>
-          <FormInputContainer>
+          {console.log(currentUser)}
+          <FormInputContainer onSubmit={handleSubmit}>
             <UsernameForm
               type="email"
               placeholder="yourid@provider.com"
@@ -52,7 +72,9 @@ function SignIn() {
               spellCheck="false"
               required
             />
-            <FormInputButton>Submit</FormInputButton>
+            <FormInputButton disabled={loading} type="submit">
+              Submit
+            </FormInputButton>
           </FormInputContainer>
         </LoginForm>
       </Container>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {FormControl} from "@material-ui/core";
 
 export const Container = styled.div`
   display: flex;
@@ -28,7 +29,7 @@ export const LoginTitle = styled.span`
   color: #d7e6d0;
 `;
 
-export const FormInputContainer = styled.div`
+export const FormInputContainer = styled.form`
   margin: 20px 80vh 0 0;
   display: flex;
   flex-direction: column;
