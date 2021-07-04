@@ -21,7 +21,6 @@ import {
   HeaderTextBold,
   ByMe,
   Li,
-  Acc,
 } from "./HeaderStyles.js";
 import "./header.css";
 

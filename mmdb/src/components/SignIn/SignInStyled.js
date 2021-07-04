@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {FormControl} from "@material-ui/core";
 
 export const Container = styled.div`
   display: flex;
@@ -23,16 +22,17 @@ export const LoginForm = styled.div`
 
 export const LoginTitle = styled.span`
   font-family: "Poppins";
-  margin: 0 60vh 3vh 0;
+  margin: 0 60% 3vh 0;
   font-weight: 700;
   font-size: 80px;
   color: #d7e6d0;
 `;
 
 export const FormInputContainer = styled.form`
-  margin: 20px 80vh 0 0;
+  margin: 20px 0 0 40%;
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 
 export const UsernameForm = styled.input`
@@ -45,7 +45,7 @@ export const UsernameForm = styled.input`
   color: #d9e9d8;
   caret-color: #d9e9d8;
   caret-width: 2px;
-  width: 70vh;
+  width: 30%;
   background-color: #667d7e;
   z-index: 999;
 `;
@@ -60,7 +60,7 @@ export const PasswordForm = styled.input`
   color: #d9e9d8;
   caret-color: #d9e9d8;
   caret-width: 2px;
-  width: 70vh;
+  width: 30%;
   background-color: #667d7e;
   margin: 15px 0 0 0;
   z-index: 999;
@@ -114,8 +114,8 @@ export const OverflowDiv = styled.div`
 export const BubbleBox3 = styled.div`
   border-radius: 100%;
   background-color: #c6d45b;
-  width: 650px;
-  height: 650px;
+  width: 550px;
+  height: 550px;
   margin: 40% 0 0 3%;
   z-index: -1;
 `;
