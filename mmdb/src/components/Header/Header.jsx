@@ -28,10 +28,13 @@ import "./header.css";
 function Header() {
   const iconSize = 50;
   const {currentUser} = useAuth();
-  const account =
-    (currentUser && currentUser.email) === true
-      ? currentUser && currentUser.email
-      : "Account";
+  const account = () => {
+    if (typeof (currentUser && currentUser.email) === "string") {
+      return currentUser && currentUser.email;
+    } else {
+      return "Account";
+    }
+  };
 
   return (
     <Container>
@@ -51,7 +54,7 @@ function Header() {
                 className="acc-icon"
                 style={{fontSize: iconSize}}
               />
-              <span className="acc">{currentUser && currentUser.email}</span>
+              <span className="acc">{account()}</span>
             </Link>
           </Li>
           <Li>
