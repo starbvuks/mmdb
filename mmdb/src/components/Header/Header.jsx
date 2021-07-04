@@ -8,6 +8,7 @@ import MovieIcon from "@material-ui/icons/Movie";
 import StarIcon from "@material-ui/icons/Star";
 import AddToQueueIcon from "@material-ui/icons/AddToQueue";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
+import {useAuth} from "../contexts/AuthContext";
 
 // import files
 
@@ -20,12 +21,20 @@ import {
   HeaderTextBold,
   ByMe,
   Li,
-  Acc,
 } from "./HeaderStyles.js";
 import "./header.css";
 
 function Header() {
   const iconSize = 50;
+  const {currentUser} = useAuth();
+  const account = () => {
+    if (typeof (currentUser && currentUser.email) === "string") {
+      return currentUser && currentUser.email;
+    } else {
+      return "Account";
+    }
+  };
+
   return (
     <Container>
       <AppBarStyled position="static">
@@ -44,7 +53,7 @@ function Header() {
                 className="acc-icon"
                 style={{fontSize: iconSize}}
               />
-              <span className="acc">Account</span>
+              <span className="acc">{account()}</span>
             </Link>
           </Li>
           <Li>

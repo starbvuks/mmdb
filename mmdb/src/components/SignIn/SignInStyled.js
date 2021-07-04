@@ -22,16 +22,17 @@ export const LoginForm = styled.div`
 
 export const LoginTitle = styled.span`
   font-family: "Poppins";
-  margin: 0 60vh 3vh 0;
+  margin: 0 18% 3vh 0;
   font-weight: 700;
   font-size: 80px;
   color: #d7e6d0;
 `;
 
-export const FormInputContainer = styled.div`
-  margin: 20px 80vh 0 0;
+export const FormInputContainer = styled.form`
+  margin: 20px 0 0 40%;
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 
 export const UsernameForm = styled.input`
@@ -44,7 +45,7 @@ export const UsernameForm = styled.input`
   color: #d9e9d8;
   caret-color: #d9e9d8;
   caret-width: 2px;
-  width: 70vh;
+  width: 30%;
   background-color: #667d7e;
   z-index: 999;
 `;
@@ -59,7 +60,7 @@ export const PasswordForm = styled.input`
   color: #d9e9d8;
   caret-color: #d9e9d8;
   caret-width: 2px;
-  width: 70vh;
+  width: 30%;
   background-color: #667d7e;
   margin: 15px 0 0 0;
   z-index: 999;
@@ -99,12 +100,13 @@ export const BubbleBox2 = styled.div`
   width: 250px;
   height: 250px;
   position: absolute;
-  margin: 10% 0 0 20%;
+  margin: 10% 0 0 30%;
   z-index: -1;
 `;
 
 export const OverflowDiv = styled.div`
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -113,8 +115,12 @@ export const OverflowDiv = styled.div`
 export const BubbleBox3 = styled.div`
   border-radius: 100%;
   background-color: #c6d45b;
-  width: 650px;
-  height: 650px;
-  margin: 40% 0 0 3%;
+  width: 550px;
+  height: 550px;
+  margin: 45% 0 0 3%;
   z-index: -1;
+
+  @media (max-height: 770px) {
+    margin: 40% 0 0 3%;
+  }
 `;
