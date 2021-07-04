@@ -22,7 +22,7 @@ export const LoginForm = styled.div`
 
 export const LoginTitle = styled.span`
   font-family: "Poppins";
-  margin: 0 60% 3vh 0;
+  margin: 0 18% 3vh 0;
   font-weight: 700;
   font-size: 80px;
   color: #d7e6d0;
@@ -100,12 +100,13 @@ export const BubbleBox2 = styled.div`
   width: 250px;
   height: 250px;
   position: absolute;
-  margin: 10% 0 0 20%;
+  margin: 10% 0 0 30%;
   z-index: -1;
 `;
 
 export const OverflowDiv = styled.div`
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -116,6 +117,10 @@ export const BubbleBox3 = styled.div`
   background-color: #c6d45b;
   width: 550px;
   height: 550px;
-  margin: 40% 0 0 3%;
+  margin: 45% 0 0 3%;
   z-index: -1;
+
+  @media (max-height: 770px) {
+    margin: 40% 0 0 3%;
+  }
 `;
