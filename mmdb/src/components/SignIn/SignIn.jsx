@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import {
   Container,
   LoginForm,
@@ -18,6 +18,8 @@ import {Link} from "react-router-dom";
 import logo from "../../img/mmdb-logo.png";
 
 function SignIn() {
+  const emailRef = useRef();
+  const passwordRef = useRef();
   return (
     <>
       <Link to="/">
@@ -32,14 +34,22 @@ function SignIn() {
           <OverflowDiv>
             <BubbleBox3 />
           </OverflowDiv>
-          <LoginTitle>Login</LoginTitle>
+          <LoginTitle>Sign Up</LoginTitle>
           <FormInputContainer>
-            <UsernameForm type="text" placeholder="Username" required />
+            <UsernameForm
+              type="email"
+              placeholder="yourid@provider.com"
+              spellCheck="false"
+              ref={emailRef}
+              required
+            />
             <PasswordForm
               type="password"
               placeholder="Password"
               autocorrect="off"
               autocomplete="off"
+              ref={passwordRef}
+              spellCheck="false"
               required
             />
             <FormInputButton>Submit</FormInputButton>

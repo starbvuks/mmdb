@@ -17,7 +17,7 @@ function MainCard({title, poster_path, vote_average}) {
     <Container>
       <CardContent>
         <ImageDiv>
-          <Poster src={IMAGE_API + poster_path} alt="movie" />
+          <Poster src={IMAGE_API + poster_path} alt="movie" width="100%" />
         </ImageDiv>
         <BottomPortion>
           <Title>{title}</Title>

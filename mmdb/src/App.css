@@ -9,9 +9,8 @@
 }
 
 body {
-  /* background-color: #1e2c42; */
   background-color: #31404a;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   max-width: 100%;
 }
 
@@ -55,6 +54,10 @@ body::-webkit-scrollbar-thumb {
   color: #d9e9d8;
   opacity: 0.5;
   font-weight: normal;
+}
+
+::spelling-error {
+  text-decoration: none;
 }
 
 img {

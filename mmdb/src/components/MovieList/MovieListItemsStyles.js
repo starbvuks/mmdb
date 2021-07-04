@@ -10,6 +10,11 @@ export const Main = styled.div`
 
 export const Poster = styled.div``;
 
+export const Image = styled.img`
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+`;
+
 export const Details = styled.div``;
 
 export const Title = styled.span``;

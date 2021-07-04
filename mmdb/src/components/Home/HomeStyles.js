@@ -6,10 +6,16 @@ export const Main = styled.div`
   align-items: center;
 `;
 
+export const HeaderFlex = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  margin: 25px 9% 0 15%;
+`;
+
 export const HeaderSearch = styled.div`
   display: flex;
-  flex-grow: 1;
-  margin: 20px 35% 0 13%;
 `;
 
 export const HeaderSearchInput = styled.input`
@@ -17,11 +23,13 @@ export const HeaderSearchInput = styled.input`
   border-radius: 50px;
   border: none;
   font-family: "Poppins";
+  font-weight: 600;
   padding-left: 20px;
   font-size: 18pt;
   color: #d9e9d8;
   caret-color: #d9e9d8;
   caret-width: 2px;
+  width: 55vh;
   height: 50px;
   background-color: #667d7e;
 `;
@@ -49,17 +57,16 @@ export const HeaderSearchInputContainer = styled.button`
 //   color: #5f3850;
 // `;
 
-export const Logo = styled.div`
-  position: relative;
-  margin: 30px 16vh 0 0;
-`;
+export const Logo = styled.div``;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  position: relative;
+`;
 
 export const HiglightedHead = styled.span`
   display: flex;
   justify-content: left;
-  margin: 5px 0 0 27vh;
+  margin: 5px 0 0 15%;
   font-size: 38pt;
   color: #d7e6d0;
   font-family: "Poppins";

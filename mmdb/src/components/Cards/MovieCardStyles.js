@@ -7,7 +7,7 @@ export const Container = styled.div`
   margin: 3% 5% 0 5%;
   border-radius: 10px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 20%;
   height: auto;
 `;
 
@@ -31,7 +31,8 @@ export const Title = styled.span`
   font-family: "Montserrat";
   letter-spacing: 1px;
   font-weight: 700;
-  font-size: 24px;
+  margin-right: 3%;
+  font-size: 20px;
 `;
 
 export const Ratings = styled.div``;
