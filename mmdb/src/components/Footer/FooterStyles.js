@@ -1,3 +1,4 @@
+// import packages / grid elements
 import styled from "styled-components";
 import {Container, Grid, Box} from "@material-ui/core";
 

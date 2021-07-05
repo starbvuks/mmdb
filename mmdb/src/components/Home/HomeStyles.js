@@ -14,9 +14,7 @@ export const HeaderFlex = styled.div`
   margin: 25px 9% 0 15%;
 `;
 
-export const HeaderSearch = styled.div`
-  display: flex;
-`;
+export const HeaderSearch = styled.div``;
 
 export const HeaderSearchInput = styled.input`
   flex-grow: 1;
@@ -49,13 +47,6 @@ export const HeaderSearchInputContainer = styled.button`
     transform: scale(1.1);
   }
 `;
-
-// export const TextBox = styled(TextField)`
-//   flex-grow: 1;
-//   border-radius: 50px;
-//   border: none;
-//   color: #5f3850;
-// `;
 
 export const Logo = styled.div``;
 

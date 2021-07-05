@@ -1,4 +1,11 @@
-import React, {useRef, useState, useEffect} from "react";
+// import packages
+import React, {useRef, useState} from "react";
+import {Link} from "react-router-dom";
+
+// import auth files
+import {useAuth} from "../contexts/AuthContext";
+
+// import styled components
 import {
   Container,
   LoginForm,
@@ -13,19 +20,23 @@ import {
   OverflowDiv,
   Logo,
 } from "./SignInStyled";
-import {Link} from "react-router-dom";
 
-import {useAuth} from "../contexts/AuthContext";
-
+// import logo
 import logo from "../../img/mmdb-logo.png";
 
 function SignIn() {
+  // initialize refs
   const emailRef = useRef();
   const passwordRef = useRef();
-  const {signup, currentUser} = useAuth();
+
+  // get user data on signup
+  const {signup} = useAuth();
+
+  // set states
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  // handle login on submission
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -54,8 +65,6 @@ function SignIn() {
             <BubbleBox3 />
           </OverflowDiv>
           <LoginTitle>Sign Up</LoginTitle>
-          {/* <LoginTitle>Welcome, {currentUser && currentUser.email} !</LoginTitle> */}
-
           <FormInputContainer onSubmit={handleSubmit}>
             <UsernameForm
               type="email"

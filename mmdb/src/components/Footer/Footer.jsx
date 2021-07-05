@@ -1,6 +1,8 @@
+// import packages
 import React from "react";
 import logo from "../../img/mmdb-logo.png";
 
+// import styled components
 import {
   ContainerStyled,
   BoxStyled,
@@ -12,6 +14,7 @@ import {
   Span,
 } from "./FooterStyles.js";
 
+// grid based content
 function Footer() {
   return (
     <BoxStyled bgcolor="#2f3b3e">

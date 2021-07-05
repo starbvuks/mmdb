@@ -10,8 +10,6 @@ import AddToQueueIcon from "@material-ui/icons/AddToQueue";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import {useAuth} from "../contexts/AuthContext";
 
-// import files
-
 // import styled components
 import {
   Container,
@@ -25,7 +23,10 @@ import {
 import "./header.css";
 
 function Header() {
+  // set icon size
   const iconSize = 50;
+
+  // change account hover text if logged in
   const {currentUser} = useAuth();
   const account = () => {
     if (typeof (currentUser && currentUser.email) === "string") {
@@ -46,7 +47,6 @@ function Header() {
             </Link>
             <ByMe href="https://github.com/starbvuks">By sarvag kalari</ByMe>
           </HeaderText>
-          {/* <Divider /> */}
           <Li>
             <Link to="/login" style={{color: "inherit"}}>
               <AccountBoxIcon

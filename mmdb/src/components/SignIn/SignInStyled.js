@@ -120,7 +120,7 @@ export const BubbleBox3 = styled.div`
   margin: 45% 0 0 3%;
   z-index: -1;
 
-  @media (max-height: 770px) {
+  @media (max-height: 767px) {
     margin: 40% 0 0 3%;
   }
 `;

@@ -1,3 +1,4 @@
+// import packages
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
 // import components
@@ -12,6 +13,7 @@ import ActorList from "./components/Actors/ActorPage.jsx";
 // import Styles
 import "./App.css";
 
+// wrapped in auth provider
 function App() {
   return (
     <Router>

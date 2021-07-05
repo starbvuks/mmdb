@@ -1,7 +1,8 @@
+// import firebase
 import firebase from "firebase/app";
 import "firebase/auth";
-// import app from "firebase/app";
 
+// configure firebase
 const firebaseConfig = firebase.initializeApp({
   apiKey: "AIzaSyBEsyCbw-PzsDRd4vrIaYNRewv3Li4bIDw",
   authDomain: "mmdb-auth.firebaseapp.com",
@@ -12,19 +13,6 @@ const firebaseConfig = firebase.initializeApp({
   measurementId: "G-6PEDD4K62S",
 });
 
-// if (!firebase.apps.length) {
-//   firebase.initializeApp({});
-// } else {
-//   firebase.app();
-// }
-
-// class Firebase {
-//   constructor() {
-//     app.initializeApp(config);
-
-//     this.auth = app.auth();
-//   }
-// }
-
+// export data
 export const auth = firebaseConfig.auth();
 export default firebaseConfig;
