@@ -1,0 +1,26 @@
+.acc {
+  width: 90px;
+  font-family: "Poppins";
+  background-color: var(--text-yellow);
+  position: absolute;
+  transition: 0.3s all;
+  border-radius: 25px;
+  text-align: center;
+  color: #3b5058;
+  margin: 7% 0 0 7%;
+  padding: 5px 0;
+  display: inline;
+  opacity: 0;
+  z-index: 1;
+}
+
+.acc-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.acc-icon:hover + .acc {
+  outline: none;
+  text-decoration: none;
+  opacity: 1;
+}

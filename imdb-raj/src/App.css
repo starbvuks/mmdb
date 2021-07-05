@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+:root {
+  --text-yellow: #f5c53b;
+  --text-grey: #919191;
+  --back-bluesteel: #1a263b;
+  --back-fadedsteel: #2e3c48;
+}
+
+body {
+  /* background-color: #1e2c42; */
+  background-color: #31404a;
+  /* overflow-x: hidden; */
+  max-width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body > * {
+  flex-shrink: 0;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input,
+button,
+submit {
+  border: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000000;
+}
+body::-webkit-scrollbar-thumb {
+  background: #f5c53b;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #d9e9d8;
+  opacity: 0.5;
+  font-weight: normal;
+}
