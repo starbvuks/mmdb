@@ -1,4 +1,7 @@
+// import packages
 import React from "react";
+
+// import styled components
 import {
   Container,
   CardContent,
@@ -10,6 +13,7 @@ import {
   BottomPortion,
 } from "./MovieCardStyles";
 
+// get api data
 const IMAGE_API = "https://www.themoviedb.org/t/p/w300/";
 
 function MainCard({title, poster_path, vote_average}) {

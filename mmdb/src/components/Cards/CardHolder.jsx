@@ -1,18 +1,21 @@
+// import packages
 import React, {useEffect, useState} from "react";
-import MovieCard from "./MovieCard.jsx";
-
 import styled from "styled-components";
 
-// import api related
+// import files
+import MovieCard from "./MovieCard.jsx";
 
+// import api data
 const api_key = process.env.REACT_APP_API_KEY;
 
 const FEATURED_API = `https://api.themoviedb.org/3/movie/popular?api_key=${api_key}&page=1&language=en-US`;
-const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&page=1&language=en-US`;
+// TBI - const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&page=1&language=en-US`;
 
 function CardHolder() {
+  // set state
   const [movies, setMovies] = useState([]);
 
+  // feth data and handle errors
   useEffect(() => {
     fetch(FEATURED_API)
       .then((res) => res.json())
