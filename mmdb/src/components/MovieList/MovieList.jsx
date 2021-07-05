@@ -1,12 +1,14 @@
+// import packages
 import React, {useState, useEffect} from "react";
 import {Container, HeadSection, Logo, Main, Header} from "./MovieListStyles";
 import {Link} from "react-router-dom";
 
+// import files
 import MovieListItems from "./MovieListItems.jsx";
 import logo from "../../img/mmdb-logo.png";
 
+// api data : pages-1,2,3
 const api_key = process.env.REACT_APP_API_KEY;
-
 const LATEST_API_1 = `
 https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}&language=en-US&page=1`;
 const LATEST_API_2 = `
@@ -15,10 +17,12 @@ const LATEST_API_3 = `
 https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}&language=en-US&page=3`;
 
 function MovieList() {
+  // set states for pages
   const [movies1, setMovies1] = useState([]);
   const [movies2, setMovies2] = useState([]);
   const [movies3, setMovies3] = useState([]);
 
+  // FETCH ALL 3
   useEffect(() => {
     fetch(LATEST_API_1)
       .then((res) => res.json())
@@ -46,6 +50,9 @@ function MovieList() {
       })
       .catch((err) => console.log(err));
   }, []);
+
+  // map data to state and send props to component
+
   return (
     <Container>
       <HeadSection>
