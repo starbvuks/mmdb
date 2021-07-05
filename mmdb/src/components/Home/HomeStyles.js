@@ -14,7 +14,9 @@ export const HeaderFlex = styled.div`
   margin: 25px 9% 0 15%;
 `;
 
-export const HeaderSearch = styled.div``;
+export const HeaderSearch = styled.div`
+  display: flex;
+`;
 
 export const HeaderSearchInput = styled.input`
   flex-grow: 1;
