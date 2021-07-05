@@ -6,6 +6,7 @@ import MovieListItems from "./MovieListItems.jsx";
 import logo from "../../img/mmdb-logo.png";
 
 const api_key = process.env.REACT_APP_API_KEY;
+
 const LATEST_API_1 = `
 https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}&language=en-US&page=1`;
 const LATEST_API_2 = `

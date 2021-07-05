@@ -2,6 +2,8 @@ import firebase from "firebase/app";
 import "firebase/auth";
 // import app from "firebase/app";
 
+console.log(process.env);
+
 const firebaseConfig = firebase.initializeApp({
   apiKey: "AIzaSyBEsyCbw-PzsDRd4vrIaYNRewv3Li4bIDw",
   authDomain: "mmdb-auth.firebaseapp.com",
