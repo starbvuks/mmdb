@@ -9,8 +9,6 @@ import "./index.css";
 // require dotenv
 require("dotenv").config();
 
-console.log(process.env);
-
 ReactDOM.render(
   <React.StrictMode>
     <App />

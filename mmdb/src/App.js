@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import SignIn from "./components/SignIn/SignIn.jsx";
 import MovieList from "./components/MovieList/MovieList.jsx";
 import ActorList from "./components/Actors/ActorPage.jsx";
+import Watchlist from "./components/Watchlist/Watchlist.jsx";
 
 // import Styles
 import "./App.css";
@@ -35,6 +36,16 @@ function App() {
           <Route exact path="/actors">
             <Header />
             <ActorList />
+            <Footer />
+          </Route>
+          <Route exact path="/actors">
+            <Header />
+            <ActorList />
+            <Footer />
+          </Route>
+          <Route exact path="/watchlist">
+            <Header />
+            <Watchlist />
             <Footer />
           </Route>
         </AuthProvider>
