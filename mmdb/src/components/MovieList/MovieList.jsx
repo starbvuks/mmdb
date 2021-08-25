@@ -1,20 +1,20 @@
 // import packages
-import React, {useState, useEffect} from "react";
-import {Container, HeadSection, Logo, Main, Header} from "./MovieListStyles";
-import {Link} from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Container, HeadSection, Logo, Main, Header } from "./MovieListStyles";
+import { Link } from "react-router-dom";
 
 // import files
 import MovieListItems from "./MovieListItems.jsx";
 import logo from "../../img/mmdb-logo.png";
 
 // api data : pages-1,2,3
-const api_key = process.env.REACT_APP_API_KEY;
+const api_key = "5e86a10fe6baf06ca1a742fa8c4fdc2d";
 const LATEST_API_1 = `
-https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}&language=en-US&page=1`;
+https://api.themoviedb.org/3/movie/now_playing?api_key=5e86a10fe6baf06ca1a742fa8c4fdc2d&language=en-US&page=1`;
 const LATEST_API_2 = `
-https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}&language=en-US&page=2`;
+https://api.themoviedb.org/3/movie/now_playing?api_key=5e86a10fe6baf06ca1a742fa8c4fdc2d&language=en-US&page=2`;
 const LATEST_API_3 = `
-https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}&language=en-US&page=3`;
+https://api.themoviedb.org/3/movie/now_playing?api_key=5e86a10fe6baf06ca1a742fa8c4fdc2d&language=en-US&page=3`;
 
 function MovieList() {
   // set states for pages

@@ -1,15 +1,15 @@
 // import packages
-import React, {useEffect, useState} from "react";
-import {Container, Main, HeadSection, Header, Logo} from "./ActorPageStyles";
-import {Link} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Container, Main, HeadSection, Header, Logo } from "./ActorPageStyles";
+import { Link } from "react-router-dom";
 
 // import files
 import ActorContent from "./ActorContent.jsx";
 import logo from "../../img/mmdb-logo.png";
 
 // get api data
-const api_key = process.env.REACT_APP_API_KEY;
-const ACTORS_API = `https://api.themoviedb.org/3/person/popular?api_key=${api_key}&language=en-US&page=1`;
+const api_key = "5e86a10fe6baf06ca1a742fa8c4fdc2d";
+const ACTORS_API = `https://api.themoviedb.org/3/person/popular?api_key=5e86a10fe6baf06ca1a742fa8c4fdc2d&language=en-US&page=1`;
 
 function ActorPage() {
   // set state

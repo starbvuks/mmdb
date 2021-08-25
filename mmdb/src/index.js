@@ -6,9 +6,6 @@ import App from "./App";
 // import styles
 import "./index.css";
 
-// require dotenv
-require("dotenv").config();
-
 ReactDOM.render(
   <React.StrictMode>
     <App />

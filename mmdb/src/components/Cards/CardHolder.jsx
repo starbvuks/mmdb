@@ -1,14 +1,14 @@
 // import packages
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 // import files
 import MovieCard from "./MovieCard.jsx";
 
 // import api data
-const api_key = process.env.REACT_APP_API_KEY;
+const api_key = "5e86a10fe6baf06ca1a742fa8c4fdc2d";
 
-const FEATURED_API = `https://api.themoviedb.org/3/movie/popular?api_key=${api_key}&page=1&language=en-US`;
+const FEATURED_API = `https://api.themoviedb.org/3/movie/popular?api_key=5e86a10fe6baf06ca1a742fa8c4fdc2d&page=1&language=en-US`;
 // TBI - const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&page=1&language=en-US`;
 
 function CardHolder() {
