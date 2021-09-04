@@ -8,19 +8,24 @@ import {
   Poster,
   Image,
   Details,
+  Name,
+  Overview,
 } from "./MovieListItemsStyles.js";
 
 // fetch images from api
 const IMAGE_API = "https://www.themoviedb.org/t/p/w200/";
 
-function MovieListItems({poster_path}) {
+function MovieListItems({ poster_path, title, overview }) {
   return (
     <Container>
       <Main>
         <Poster>
           <Image src={IMAGE_API + poster_path} alt="movie" />
+          <Details>
+            <Name>{title}</Name>
+            <Overview>{overview}</Overview>
+          </Details>
         </Poster>
-        <Details></Details>
       </Main>
     </Container>
   );
