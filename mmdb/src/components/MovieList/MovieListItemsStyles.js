@@ -19,6 +19,31 @@ export const Image = styled.img`
   border-radius: 10px;
 `;
 
+export const Top = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+`;
+
+export const Name = styled.span`
+  font-family: "Poppins";
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 3vh 0.7vw 2vh 0;
+`;
+
+export const Rating = styled.span`
+  font-family: "Poppins";
+  font-weight: 600;
+  color: var(--text-yellow);
+  background-color: var(--back-bluesteel);
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  max-height: 1.5rem;
+  border-radius: 0.8rem;
+`;
+
 export const Details = styled.div`
   position: absolute;
   top: 0;
@@ -40,11 +65,6 @@ export const Details = styled.div`
   }
 `;
 
-export const Name = styled.span`
-  font-family: "Poppins";
-  font-weight: 600;
-`;
-
 export const Overview = styled.span`
   font-family: "Poppins";
   font-weight: 300;
@@ -62,10 +82,4 @@ export const Poster = styled.div`
   }
 `;
 
-export const Title = styled.span``;
-
 export const ReleaseDate = styled.span``;
-
-export const Rating = styled.span``;
-
-export const Description = styled.span``;
