@@ -25,7 +25,6 @@ export const Details = styled.div`
   right: 0;
   left: 0;
   bottom: 0;
-  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--text-yellow);
@@ -33,9 +32,8 @@ export const Details = styled.div`
   justify-content: center;
   opacity: 0;
   transition: 0.5s;
-  transform: transformX(0%);
-  overflow-y: scroll;
-  padding: 5vh 2vw 0 2vw;
+  overflow: scroll;
+  padding: 0 2vw;
 
   ::-webkit-scrollbar {
     width: 0;
@@ -52,6 +50,7 @@ export const Overview = styled.span`
   font-weight: 300;
   font-size: small;
   color: #3b5058;
+  max-height: 75%;
 `;
 
 export const Poster = styled.div`
