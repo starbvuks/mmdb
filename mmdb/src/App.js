@@ -1,8 +1,8 @@
 // import packages
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // import components
-import {AuthProvider} from "./components/contexts/AuthContext.js";
+import { AuthProvider } from "./components/contexts/AuthContext.js";
 import Home from "./components/Home/Home.jsx";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
@@ -31,11 +31,6 @@ function App() {
           <Route exact path="/movies">
             <Header />
             <MovieList />
-            <Footer />
-          </Route>
-          <Route exact path="/actors">
-            <Header />
-            <ActorList />
             <Footer />
           </Route>
           <Route exact path="/actors">

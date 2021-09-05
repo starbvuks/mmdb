@@ -12,11 +12,11 @@
   padding: 0.5rem;
   display: inline;
   opacity: 0;
-  z-index: 1;
 }
 
 .acc-icon:hover + .acc {
   outline: none;
   text-decoration: none;
   opacity: 1;
+  z-index: 999;
 }

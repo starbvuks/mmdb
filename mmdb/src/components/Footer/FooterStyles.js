@@ -1,10 +1,10 @@
 // import packages / grid elements
 import styled from "styled-components";
-import {Container, Grid, Box} from "@material-ui/core";
+import { Container, Grid, Box } from "@material-ui/core";
 
 export const BoxStyled = styled(Box)`
   color: white;
-  margin-top: 90vh;
+  margin-top: 20vh;
   font-family: "Poppins";
   font-weight: 500;
 `;

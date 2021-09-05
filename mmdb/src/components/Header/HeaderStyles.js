@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {AppBar, Toolbar} from "@material-ui/core";
+import { AppBar, Toolbar } from "@material-ui/core";
 
 export const Container = styled.div`
   width: 7.5rem;
@@ -46,13 +46,6 @@ export const ByMe = styled.a`
     text-decoration: none;
   }
 `;
-
-// export const Divider = styled.hr`
-//   background-color: #a3c65c;
-//   border: 2px solid #a3c65c;
-//   margin: 0;
-//   width: 115px;
-// `;
 
 export const Li = styled.div`
   padding-top: 60px;
