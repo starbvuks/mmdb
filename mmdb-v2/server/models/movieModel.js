@@ -7,6 +7,5 @@ var movieSchema = new mongoose.Schema({
   genre: String,
   rating: Number,
 });
-movies = mongoose.model("users", movieSchema);
 
-module.exports = movies;
+module.exports = mongoose.model("Movies", movieSchema);

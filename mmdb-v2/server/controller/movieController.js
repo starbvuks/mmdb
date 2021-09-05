@@ -1,8 +1,9 @@
-const Movie = require("../models/movieModel");
+const Movies = require("../models/movieModel");
 
 module.exports.getAll = (req, res) => {
-  Movie.find()
+  Movies.find({})
     .then((data) => {
+      console.log(data);
       res.status(200).json({ data });
     })
     .catch((err) => {
