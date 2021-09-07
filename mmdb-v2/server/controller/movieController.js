@@ -3,8 +3,7 @@ const Movies = require("../models/movieModel");
 module.exports.getAll = (req, res) => {
   Movies.find({})
     .then((data) => {
-      console.log(data);
-      res.status(200).json({ data });
+      res.status(200).json(data);
     })
     .catch((err) => {
       return res
