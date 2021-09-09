@@ -1,4 +1,6 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+
 import { XCircleIcon as Exit } from "@heroicons/react/solid";
 import { UserCircleIcon } from "@heroicons/react/solid";
 import { CollectionIcon } from "@heroicons/react/solid";
@@ -7,13 +9,20 @@ import { BookmarkIcon } from "@heroicons/react/solid";
 import { BookOpenIcon } from "@heroicons/react/solid";
 
 const NavMenu = ({ menuClick }) => {
+  const [token, setToken] = useState();
+
+  useEffect(() => {
+    const tokenString = localStorage.getItem("user");
+    const userToken = JSON.parse(tokenString);
+    userToken ? setToken(userToken) : null;
+  }, []);
+
   return (
     <div>
       <div className="flex flex-col items-center justify-center bg-mainNavHead py-5 px-7">
-        <Exit
-          className="text-mainGrey w-1/4 py-1 self-end"
-          onClick={() => menuClick()}
-        />
+        <button className="flex py-1 justify-end">
+          <Exit className="text-mainGrey w-1/4 " onClick={() => menuClick()} />
+        </button>
         <div className="flex flex-col items-center text-right text-lg text-mainGrey font-poppins">
           <span>
             Welcome to <br />
@@ -23,7 +32,19 @@ const NavMenu = ({ menuClick }) => {
         </div>
       </div>
       <div className="flex flex-col items-center gap-y-14 mt-10 font-poppins font-bold text-xl text-darkBlue">
-        <UserCircleIcon className="text-mainYellow w-1/3" />
+        {token ? (
+          <Link href="/profile">
+            <a className="text-mainYellow w-1/3 cursor-pointer relative">
+              <UserCircleIcon />
+            </a>
+          </Link>
+        ) : (
+          <Link href="/login">
+            <a className="text-mainYellow w-1/3 cursor-pointer relative">
+              <UserCircleIcon />
+            </a>
+          </Link>
+        )}
         <CollectionIcon className="text-mainYellow w-1/3" />
         <StarIcon className="text-mainYellow w-1/3" />
         <BookmarkIcon className="text-mainYellow w-1/3" />
