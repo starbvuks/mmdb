@@ -9,12 +9,18 @@ module.exports = {
       mainNav: "#2f3b3e",
       mainNavHead: "#3b5058",
       mainFadedSteel: "#2e3c48",
+      mainGrey: "#c3d8c8",
     }),
     textColor: (theme) => ({
       ...theme("colors"),
       mainYellow: "#f5c53b",
       mainGrey: "#c3d8c8",
+      mainGreyDark: "#B3C7B8",
       mainFadedSteel: "#2e3c48",
+    }),
+    divideColor: (theme) => ({
+      ...theme("borderColors"),
+      mainGrey: "#c3d8c8",
     }),
     extend: {
       fontFamily: {
